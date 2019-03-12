@@ -14,8 +14,6 @@ hexo help # 查看帮助
 hexo version #查看Hexo的版本
 ```
 
-
-
 ## 2. 修改文章内链接文本样式
 
 打开文件 `themes/next/source/css/_common/components/post/post.styl`，在末尾添加
@@ -35,8 +33,6 @@ hexo version #查看Hexo的版本
 
 其中选择 .post-body 是为了不影响标题，选择 p 是为了不影响首页“阅读全文”的显示样式,颜色可以自己定义。
 
-
-
 ## 3. Aplayer配置
 
 ```js
@@ -48,9 +44,9 @@ $(function () {
         url: 'https://api.i-meto.com/meting/api?server=netease&type=song&id=573747359',
         success: function (list) {
             var ap = new APlayer({
-                element: document.getElementById('aplayer-blog-begin'),
+                element: document.getElementById'aplayer-blog-begin'),
                 showlrc: 3,
-				volume: 0.5,
+                volume: 0.5,
                 theme: '#ad7a86',
                 mode: 'random',
                 music: JSON.parse(list)[0]
@@ -65,19 +61,13 @@ $(function () {
 &nbsp;
 ```
 
-
-
 ## 4. 关闭页面评论
 
 comments: false
 
-
-
 ## 5. 文章主页查看部分文章内容
 
 在文章中加上`<!--more-->` 标记,首页文章只显示一部分
-
-
 
 ## 6. Dplayer配置
 
@@ -103,8 +93,6 @@ $(function () {
 {% endraw %}
 &nbsp;
 ```
-
-
 
 ## 7. 文章置顶
 
@@ -148,8 +136,6 @@ module.exports = function(locals) {
 };
 ```
 
-
-
 ## 8. 设置置顶标志
 
 打开：`/blog/themes/next/layout/_macro` 目录下的`post.swig`文件，定位到`<div class="post-meta">`标签下，插入如下代码：
@@ -162,14 +148,13 @@ module.exports = function(locals) {
 {% endif %}
 ```
 
+---
 
+参考资料：
+https://www.jianshu.com/u/0cf965162867
 
+https://www.jianshu.com/p/1ba96f9a339b
 
+https://www.jianshu.com/p/efbeddc5eb19
 
-参考资料：https://www.jianshu.com/u/0cf965162867
-
-​		   https://www.jianshu.com/p/1ba96f9a339b
-
-​                   https://www.jianshu.com/p/efbeddc5eb19
-
-​                   https://www.jianshu.com/p/9f0e90cc32c2
+https://www.jianshu.com/p/9f0e90cc32c2
