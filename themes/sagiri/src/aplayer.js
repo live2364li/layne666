@@ -7,10 +7,7 @@ const apFixed = new APlayer({
   fixed: true,
 });
 $.ajax({
-  type:"GET",
-  url: 'http://api.layne666.site/api?type=list&id=2652030925',
-  dataType:"jsonp",  //数据格式设置为jsonp
-  jsonp:"callback", 
+  url: 'https://api.i-meto.com/meting/api?server=netease&type=playlist&id=2652030925',
   success: function (list) {
     apFixed.list.add(JSON.parse(list));
   }
