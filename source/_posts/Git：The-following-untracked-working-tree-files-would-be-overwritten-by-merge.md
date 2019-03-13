@@ -3,6 +3,7 @@ title: Git：The following untracked working tree files would be overwritten by 
 date: '2019-02-19 10:40:48'
 updated: '2019-02-19 10:43:27'
 tags: [Git]
+categories: Git
 ---
 ## 问题
 
