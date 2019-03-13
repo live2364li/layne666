@@ -1,5 +1,5 @@
 ---
-title: Git merge和Git rebase的区别
+title: merge和rebase的区别
 date: '2019-03-13 23:00:13'
 updated: '2019-03-13 23:00:13'
 tags: [Git]
