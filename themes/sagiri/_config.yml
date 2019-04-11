@@ -232,8 +232,8 @@ post_wordcount:
 
 # Reward
 reward_comment:
-#wechatpay: /images/wechatpay.png
-#alipay: /images/alipay.png
+wechatpay: /images/wechatpay.png
+alipay: /images/alipay.png
 bitcoin:
 
 # Declare license on posts
@@ -831,6 +831,10 @@ footer:
 online_api: wss://api.diygod.me/online/
 
 description: <span>有目的的生活是一种简单的生活，</span><span>但那是不容易做到的！</span>
+
+# Online contact 
+daovoice: true
+daovoice_app_id: 13b1166c
 
 # Theme version
 version: 0.0.4
