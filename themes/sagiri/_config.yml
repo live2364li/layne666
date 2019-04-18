@@ -69,11 +69,13 @@ menu:
   首页: / || home
   #抓到我: javascript:; || sign-language
   #实验室: javascript:; || flask
+  导航站: javascript:; || internet-explorer
   归档: /archives/ || archive
   标签墙: /tags/ || tags
   友情链接: /friends/ || mars
   留言板: /message/ || pencil
-  关于: /about/ || rocket
+  #关于: /about/ || rocket
+  
 
 submenu:
   抓到我:
@@ -90,6 +92,11 @@ submenu:
     TT RSS: https://rss.diygod.me/
     监控: https://status.diygod.me/
     NAS: https://nas.diygod.me:2222/
+  导航站:
+    导航主页: https://home.layne666.site/ 
+    私人网盘: https://download.layne666.site/
+    个人图床: https://download.layne666.site/images/
+   
 
 # Enable/Disable menu icons.
 menu_icons:
