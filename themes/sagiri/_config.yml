@@ -126,9 +126,11 @@ scheme: Pisces
 social:
   GitHub: https://github.com/Layne666 || <i class="fa fa-fw fa-github"></i>
   QQ: tencent://message/?uin=791270330&Menu=yes& Service=300&sigT=42a1e5347953b64c5ff3980f8a6e644d4b31456cb0b6ac6b27663a3c4dd0f4aa14a543b1716f9d45 || <i class="fa fa-fw fa-qq"></i>
+  导航站: https://home.layne666.site || <i class="fa fa-fw fa-map-signs"></i>
   我的网盘: https://download.layne666.site || <i class="fa fa-fw fa-cloud-download"></i>
-  黑客派: https://hacpai.com/member/Layne666 || <i class="fa fa-fw fa-h-square"></i>
-  VPN: http://www.ssjs.xyz/ || <i class="fa fa-fw fa-send"></i>
+  我的图床: https://img.layne666.site || <i class="fa fa-fw fa-photo"></i>
+  #黑客派: https://hacpai.com/member/Layne666 || <i class="fa fa-fw fa-h-square"></i>
+  #VPN: http://www.ssjs.xyz/ || <i class="fa fa-fw fa-send"></i>
 
 social_icons:
   enable: true
