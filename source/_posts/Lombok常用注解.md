@@ -301,7 +301,8 @@ public void foo() {
 你把@Log的变体贴在类上（适用于你使用的日志系统）， 然后，你有一个静态的final log字段，初始化为你的类的名称，然后就可以使用它来编写日志语句。
 
 有几种选择：
-> @CommonsLog
+```java
+@CommonsLog
 创建 private static final org.apache.commons.logging.Log log = org.apache.commons.logging.LogFactory.getLog(LogExample.class);
 @Flogger
 创建 private static final com.google.common.flogger.FluentLogger log = com.google.common.flogger.FluentLogger.forEnclosingClass();
@@ -317,7 +318,7 @@ public void foo() {
 创建 private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(LogExample.class);
 @XSlf4j
 创建 private static final org.slf4j.ext.XLogger log = org.slf4j.ext.XLoggerFactory.getXLogger(LogExample.class);
-
+```
 默认情况下，记录器的主题（或名称）将是使用@Log注释注释的类的类名。可以通过指定topic参数来自定义。例如：@XSlf4j(topic="reporting")。
 
 示例代码如下：
