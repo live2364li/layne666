@@ -22,11 +22,9 @@ hexo version #查看Hexo的版本
 .post-body p a {
   color: #0593d3;
   border-bottom: none;
-  border-bottom: 1px solid #0593d3;
   &:hover {
     color: #fc6423;
     border-bottom: none;
-    border-bottom: 1px solid #fc6423;
   }
 }
 ```
