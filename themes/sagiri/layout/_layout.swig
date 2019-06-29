@@ -32,6 +32,7 @@
           </div>
           {% include '_third-party/duoshuo-hot-articles.swig' %}
           {% include '_partials/comments.swig' %}
+		  {% include '_third-party/copy-code.swig' %}
         </div>
         {% if theme.sidebar.display !== 'remove' %}
           {% block sidebar %}{% endblock %}
@@ -110,9 +111,6 @@
         console.log('Service workers are not supported in the current browser.');
     }
   </script>
-  
-  <!-- 代码块复制功能 -->
-  <script type="text/javascript" src="/js/src/clipboard.min.js"></script>  
-  <script type="text/javascript" src="/js/src/clipboard-use.js"></script>
+ 
 </body>
 </html>
