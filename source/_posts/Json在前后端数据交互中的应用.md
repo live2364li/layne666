@@ -4,24 +4,27 @@ date: '2019-01-25 00:43:20'
 updated: '2019-02-08 17:20:13'
 tags: [Json]
 ---
-# 什么是JSON？
+## 什么是JSON？
 JSON本来是javascript里的内容，有时后端要传各种各样的数据格式来适应前端，所以需要用到JSON来转换，用它来表示各种各样复杂的数据，如对象，数组，集合，以及集合的集合等数据。 
-先来了解JSON是什么，JSON是一种轻量级的前端后端以及网络传输的数据交换格式，就是一串字符串，只不过元素会使用特定的符号标注。 {} 双括号表示对象，[] 中括号表示数组，”” 双引号内是属性或值，: 冒号表示后者是前者的值(这个值可以是字符串、数字、也可以是另一个数组或对象)。也就是说在后端可以把一个字符串，然后通过JSON来转换成特定的字符串传到前端去。
-<!--more-->
-# JSON的用途
+
+先来了解JSON是什么，`JSON是一种轻量级的前端后端以及网络传输的数据交换格式`，就是一串字符串，只不过元素会使用特定的符号标注。 {} 双括号表示对象，[] 中括号表示数组，”” 双引号内是属性或值，: 冒号表示后者是前者的值(这个值可以是字符串、数字、也可以是另一个数组或对象)。也就是说在后端可以把一个字符串，然后通过JSON来转换成特定的字符串传到前端去。<!--more-->
+
+## JSON的用途
 *   使用基于JavaScript的应用程序，其中包括浏览器扩展和网站
 *   使用JSON格式序列化和结构化的数据传输网络连接
 *   这主要用于服务器和Web应用程序之间的数据传输
 *   Web服务和API采用JSON格式提供公共数据
 *   它可以用来与现代编程语言
 
-# JSON的特点
+## JSON的特点
 *   易于读写JSON
 *   轻量级的基于文本的交换格式
 *   独立语言
 
-# 一些常见的JSON格式
-1.一个JSON对象——JSONObject
+一些常见的JSON格式
+
+1. 一个JSON对象——JSONObject
+
 ```JavaScript
 简单点的：
 var json = {"name":"张三", "age":18 };
@@ -29,7 +32,8 @@ var json = {"name":"张三", "age":18 };
 复杂一点的：
 var json = {"name":"张三", "age"=18，"address":{"city":南京","country":"中国"}}；
 ```
-2.一个JSON数组——JSONArray
+2. 一个JSON数组——JSONArray
+
 ```JavaScript
 简单点的：
 var json = [{"name":"张三", "age":18 },{"name":"李四" , "age":20 }];
@@ -42,27 +46,30 @@ var json = [
 ]
 
 ```
-3.还有一种结构
+3. 还有一种结构
+
 ```JavaScript
 var json = {"abc":[{"name":"txt1"},{"name","txt2"}]};
 //这里的json.abc是一个数组，数组是由2个子json组成的
 ```
-# JSON在前端的应用
+## JSON在前端的应用
 后端将数据处理成json格式，前端就通过ajax来接收数据，并eval()或者json.prase(data)解析，循环遍历，展现在页面上。
 
 ## 解析数据
-1.json字符串转换成json对象
+1. json字符串转换成json对象
+
 ```JavaScript
 var obj = eval('(' + data + ')'); 或者 var obj = JSON.parse(data);
 ```
 <font color=#FF0000>区别：eval方法不会去检查给的字符串时候符合json的格式，同时如果给的字符串中存在js代码eval也会一并执行。相比而言eval()不安全，建议用JSON.parse。</font>
 
-2.json对象转为json字符串
+2. json对象转为json字符串
+
 ```JavaScript
 var data = JSON.stringify(jsonObj);
 ```
 在用Jquery进行ajax请求时，contentType:"application/json; charset=utf-8" 要求data必须是json字符串，dataType:“json”要求服务器返回的是json数据
-## **JSON.stringify()方法的三个参数**
+### **JSON.stringify()方法的三个参数**
 ```JavaScript
 var xiaoming = {
     name: '小明',
@@ -175,7 +182,7 @@ var xiaoming = {
 
 JSON.stringify(xiaoming); // '{"Name":"小明","Age":14}'
 ```
-## 前端相关测试代码
+### 前端相关测试代码
 ```JavaScript
   //1.json字符串
   var user='{"userId":"11","username":"Tom","userAge":"18","password":"123456"}';
@@ -201,8 +208,8 @@ JSON.stringify(xiaoming); // '{"Name":"小明","Age":14}'
   var empObj = JSON.parse(emp);
   console.log(empObj.hobbit[0]+" "+empObj.hobbit[1]);//
 ```
-# JSON在后端的应用
-## **使用JSONObject生成和解析JSON**
+## JSON在后端的应用
+### **使用JSONObject生成和解析JSON**
 首先在pom文件配置需要的jar
 这里以2.4version为例
 ```xml
@@ -260,7 +267,7 @@ JSON.stringify(xiaoming); // '{"Name":"小明","Age":14}'
   String xml = xmlSerializer.write(jsonObject, "UTF-8");
   System.out.println("javaBean--->xml \n" + xml);
 ```
-## **SpringMVC中使用注解@ResponseBody，@RequestBody传递json数据**
+### **SpringMVC中使用注解@ResponseBody，@RequestBody传递json数据**
 在SpringMVC中，可以使用@RequestBody和@ResponseBody两个注解，分别完成请求报文到对象和对象到响应报文的转换。
 
 1.@ResponseBody
@@ -272,14 +279,17 @@ JSON.stringify(xiaoming); // '{"Name":"小明","Age":14}'
 该注解用于读取Request请求的body部分数据，使用系统默认配置的HttpMessageConverter进行解析，然后把相应的数据绑定到要返回的对象上。
 
 3.HttpMessageConverter
-![](/images/springmvc001.png) 
+
+![](../images/Json在前后端数据交互中的应用/1.png)
+
+
 4.jackson包
 
 5.ajax使用要注意的
 
-　　1. JSON.stringify()和$.parseJSON()实现字符串和json对象之间的转换。注意要传过去的data是一个字符串。
+-  JSON.stringify()和$.parseJSON()实现字符串和json对象之间的转换。注意要传过去的data是一个字符串。
 
-　　2.要设置contentType: 'application/json',而不是使用默认值: "application/x-www-form-urlencoded".
+- 要设置contentType: 'application/json',而不是使用默认值: "application/x-www-form-urlencoded".
 
 
 

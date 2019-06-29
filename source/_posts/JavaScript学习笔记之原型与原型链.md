@@ -5,17 +5,16 @@ updated: '2019-02-08 17:20:19'
 tags: [JavaScript]
 categories: 前端
 ---
-# 原型
+## 原型
 
 1. 函数的prototype属性(如图)
   * 每个函数都有一个prototype属性, 它默认指向一个Object空对象(即称为: 原型对象)
   * 原型对象中有一个属性constructor, 它指向函数对象
-  
-![](/images/js_proto001.png) 
+
+![](../images/JavaScript学习笔记之原型与原型链/1.png) 
 
 2. 给原型对象添加属性(一般都是方法)
-  * 作用: 函数的所有实例对象自动拥有原型中的属性(方法)
-<!--more-->  
+  * 作用: 函数的所有实例对象自动拥有原型中的属性(方法)<!--more-->  
 
 ```JavaScript
 <script type="text/javascript">
@@ -39,20 +38,20 @@ categories: 前端
 </script>
 ```
 
-# 显式原型与隐式原型
+## 显式原型与隐式原型
 
 1. 每个函数function都有一个`prototype`，即**显式原型(属性)**
 2. 每个实例对象都有一个` __proto__`，可称为**隐式原型(属性)**
 3. 对象的隐式原型的值为其对应构造函数的显式原型的值
 4. 内存结构(如图)
 
-![](/images/js_proto002.png) 
+![](../images/JavaScript学习笔记之原型与原型链/2.png) 
 
 5. 总结:
   * 函数的prototype属性: **在定义函数时自动添加的, 默认值是一个空Object对象**
   * 对象的`__proto__`属性: **创建对象时自动添加的, 默认值为构造函数的prototype属性值**
   * 程序员能直接操作显式原型, 但不能直接操作隐式原型(ES6之前)
-  
+
 ```JavaScript
 <script type="text/javascript">
 
@@ -78,7 +77,7 @@ categories: 前端
 </script>
 ```
 
-# 原型链
+## 原型链
 1. 原型链(图解)
   * 访问一个对象的属性时，
     * 先在自身属性中查找，找到返回
@@ -86,16 +85,16 @@ categories: 前端
     * 如果最终没找到, 返回undefined
   * 别名: 隐式原型链
   * 作用: **查找对象的属性(方法)**
-  
-![](/images/js_proto003.png) 
+
+![](../images/JavaScript学习笔记之原型与原型链/3.png) 
 
 2. 构造函数/原型/实体对象的关系(图解)
 
-![](/images/js_proto004.png) 
+![](../images/JavaScript学习笔记之原型与原型链/4.png) 
 
 3. 构造函数/原型/实体对象的关系2(图解)
 
-![](/images/js_proto005.png) 
+![](../images/JavaScript学习笔记之原型与原型链/5.png) 
 ```JavaScript
 <script type="text/javascript">
   // console.log(Object)
@@ -136,7 +135,7 @@ categories: 前端
 </script>
 ```
 
-# 原型链_属性问题
+## 原型链_属性问题
 
 1. 读取对象的属性值时: 会自动到原型链中查找
 2. 设置对象的属性值时: 不会查找原型链, 如果当前对象中没有此属性, 直接添加此属性并设置其值
@@ -173,7 +172,7 @@ categories: 前端
 </script>
 ```
 
-# 探索instanceof
+## 探索instanceof
 
 1. instanceof是如何判断的?
   * 表达式: A instanceof B
@@ -203,7 +202,7 @@ categories: 前端
   console.log(Object instanceof  Foo); // false
 </script>
 ```
-![](/images/js_proto006.png) 
+![](../images/JavaScript学习笔记之原型与原型链/6.png) 
 
 
 

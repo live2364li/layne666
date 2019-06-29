@@ -13,7 +13,7 @@ tags: [Solo]
 
 <img src="https://raw.githubusercontent.com/Molunerfinn/test/master/picgo/picgo-2.0.gif" alt="" style="max-width:100%;">
 
-![picgo](/images/picgo.png)
+![picgo](../images/常用的效率工具/picgo.png)
 
 ---
 

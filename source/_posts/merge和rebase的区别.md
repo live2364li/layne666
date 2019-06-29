@@ -7,20 +7,19 @@ categories: Git
 ---
 用Git进行多人协作开发时，必然会合并代码，解决冲突。然而合并代码也是需要点技巧的，如果对一些关键命令没有理解去使用的话，git的版本演进路线就会变得很乱，从而造成了日后维护的一些麻烦。
 
-Git上合并代码有git merge 以及 git rebase 两种方式。下面将深入两者的用法以及对两者的适用场景作个总结。
-<!--more-->
+Git上合并代码有git merge 以及 git rebase 两种方式。下面将深入两者的用法以及对两者的适用场景作个总结。<!--more-->
 
-# 场景
+## 场景
 
-现在在develop开发分支上，然后你创建了一个feature分支开发新功能，现在团队中另一个成员在develop分支上添加了新的提交。如下图所示
+现在在develop开发分支上，然后你创建了一个feature分支开发新功能，现在团队中另一个成员在develop分支上添加了新的提交。如下图所示：
 
-![](/images/git merge and rebase001.png)
+![](../images/merge和rebase的区别/1.png)
 
 现在，如果develop中新的提交和你的工作是相关的。为了将新的提交并入你的分支，你有两个选择：merge或rebase。
 
-# merge
+## merge
 
-## git merge
+### git merge
 
 执行以下命令：
 
@@ -33,12 +32,11 @@ git merge develop feature
 
 feature分支中新的合并提交(merge commit)将两个分支的历史连在了一起。你会得到下面这样的分支结构：
 
-![](/images/git merge and rebase002.png)
+![](../images/merge和rebase的区别/2.png)
 
-### merge 特点
-
-自动创建一个新的commit
-当合并时遇到冲突，修改后重新commit即可
+merge 特点
+1. 自动创建一个新的commit
+2. 当合并时遇到冲突，修改后重新commit即可
 
 #### 优点
 
@@ -48,7 +46,7 @@ feature分支中新的合并提交(merge commit)将两个分支的历史连在�
 
 由于每次merge会自动产生一个merge commit，所以在使用一些git 的GUI tools，如果commit频繁，这样会使得feature分支很杂乱，这时可以考虑使用rebase来进行合并处理。
 
-## git merge - -no-ff
+### git merge - -no-ff
 
 执行以下命令：
 
@@ -66,11 +64,11 @@ git merge --no-ff develop
 
 来一张分解图示例：
 
-![](/images/git merge and rebase003.png)
+![](../images/merge和rebase的区别/3.png)
 
-# rebase
+## rebase
 
-## git rebase
+### git rebase
 
 本质是变基，即找公共祖先
 执行以下命令：
@@ -80,7 +78,7 @@ git checkout feature
 git rebase develop
 ```
 
-![](/images/git merge and rebase004.png)
+![](../images/merge和rebase的区别/4.png)
 
 它会把整个feature分支移动到develop分支的后面，有效地把所有develop分支上新的提交并入过来。但是，rebase为原分支上每一个提交创建一个新的提交，重写了项目历史，并且不会带来合并提交。
 
@@ -96,7 +94,7 @@ git rebase develop
 
 当发生冲突时不容易定位问题，因为重写了历史记录
 
-### 合并时如果出现冲突需要按照如下步骤解决
+### 合并时出现冲突按如下步骤解决
 
 1. 修改冲突部分
 2. git add
@@ -111,15 +109,15 @@ git rebase develop
 never use it on public branches(不要在公共分支上使用)
 ```
 
-比如说，如果你在develop分支上，rebase到你的feature分支上会发生什么
+比如说，如果你在develop分支上，rebase到你的feature分支上会发生什么？
 
-![](/images/git merge and rebase005.png)
+![](../images/merge和rebase的区别/5.png)
 
 rebase将所有develop的commit移动到你的feature的顶端。问题是：其他人还在develop上开发，由于你使用了rebase移动了develop，git会认为你的主分支的历史与其他人的有分歧，会产生冲突。
 
 所以在执行git rebase之前需要认真考虑，`绝不要在公共的分支上使用它`。在你运行git rebase 之前，一定要问问你自己“有没有别人正在这个分支上工作？”。如果答案是肯定的，重新找到一个无害的方式（如`git revert`）来提交你的更改。不然的话，你可以随心所欲地重写历史。
 
-# 总结
+## 总结
 
 如果你想要一个干净的、线性的提交历史，没有不必要的合并提交，你应该使用`git rebase`而不是`git merge`来并入其他分支上的更改。
 

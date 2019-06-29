@@ -8,8 +8,7 @@ categories: Java
 该工具类可以导出任何对象集合的数据到Excel（**对象必须已有getter方法**）
 但**对象属性个数、顺序要和列标题保持一致**
 
-废话不多说，直接上源码以及测试代码，有误或者有不理解的地方，还望一起讨论！
-<!--more-->
+废话不多说，直接上源码以及测试代码，有误或者有不理解的地方，还望一起讨论！<!--more-->
 工具类源码如下：
 ---
 
@@ -32,8 +31,7 @@ public class ExcelUtils {
      * @param resp       响应输出流
      * @return           返回导出状态信息
      */
-    public static Map<String,Object> exportExcel(List<Object> list, String[] colTitles, String[] properties,
-                                  String headTitle, String fileName, HttpServletResponse resp) {
+    public static Map<String,Object> exportExcel(List<Object> list, String[] colTitles, String[] properties, String headTitle, String fileName, HttpServletResponse resp) {
         Map<String, Object> result = new HashMap<>();
         //如果标题和对象属性个数不一致，则不继续进行导出
         if(colTitles.length != properties.length){
@@ -44,7 +42,8 @@ public class ExcelUtils {
         //1.创建一个excel文件
         HSSFWorkbook workbook = new HSSFWorkbook();
         //1.1 创建合并单元格对象
-        CellRangeAddress callRangeAddress = new CellRangeAddress(0,0,0,colTitles.length-1);//起始行,结束行,起始列,结束列
+        //起始行,结束行,起始列,结束列
+        CellRangeAddress callRangeAddress = new CellRangeAddress(0,0,0,colTitles.length-1);
         //1.2 创建头标题样式
         HSSFCellStyle headStyle = createCellStyle(workbook,(short)16,true);
         //1.3 创建列标题样式
@@ -139,13 +138,16 @@ public class ExcelUtils {
      */
     private static HSSFCellStyle createCellStyle(HSSFWorkbook workbook, short fontsize, Boolean isBold) {
         HSSFCellStyle style = workbook.createCellStyle();
-        style.setAlignment(HSSFCellStyle.ALIGN_CENTER);//水平居中
-        style.setVerticalAlignment(HSSFCellStyle.VERTICAL_CENTER);//垂直居中
+        //水平居中
+        style.setAlignment(HSSFCellStyle.ALIGN_CENTER);
+        //垂直居中
+        style.setVerticalAlignment(HSSFCellStyle.VERTICAL_CENTER);
         //创建字体
         HSSFFont font = workbook.createFont();
         //字体是否需要加粗
         if(isBold){
-            font.setBoldweight(HSSFFont.BOLDWEIGHT_BOLD);//加粗
+            //加粗
+            font.setBoldweight(HSSFFont.BOLDWEIGHT_BOLD);
         }
         //设置字体大小
         font.setFontHeightInPoints(fontsize);
@@ -173,6 +175,7 @@ public class ExcelUtils {
         }
         return null;
     }
+}
 ```
 
 测试代码如下：
@@ -203,8 +206,8 @@ public class ExcelUtils {
 ```
 测试结果如下：
 ---
-![exportExcel](/images/exportExcel001.png) 
+![exportExcel](../images/导出任何对象集合的数据到Excel（通用版工具类）/exportExcel001.png) 
 
-![exportExcel](/images/exportExcel002.png) 
+![exportExcel](../images/导出任何对象集合的数据到Excel（通用版工具类）/exportExcel002.png) 
 
-![exportExcel](/images/exportExcel003.png) 
+![exportExcel](../images/导出任何对象集合的数据到Excel（通用版工具类）/exportExcel003.png) 
