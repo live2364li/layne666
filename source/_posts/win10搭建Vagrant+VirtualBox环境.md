@@ -24,19 +24,19 @@ vagrant是一个操作虚拟机的工具.是一个基于Ruby的工具，用于�
 
 ## 四、进行安装
 
-#### 1.安装VirtualBox
+### 1.安装VirtualBox
 
 VirtualBox安装就不多说了，一直下一步下一步就行了。
 
-#### 2.安装Vagrant
+### 2.安装Vagrant
 
 Vargrant下载win版的，然后一直下一步下一步就行了。
 
-#### 3.下载package.box
+### 3.下载package.box
 
 去vagrant官网下载一个package.box 文件，box文件就是一个系统的镜像文件，镜像下载地址：[http://www.vagrantbox.es](http://www.vagrantbox.es/)
 
-#### 4.把虚拟机加载到box容器中
+### 4.把虚拟机加载到box容器中
 
 下载好之后，在该目录下执行命令加载镜像文件到Vagrant中去:
 
@@ -51,7 +51,7 @@ $ vagrant box list
 centos7 (virtualbox, 0)
 ```
 
-#### 5.初始化虚拟机
+### 5.初始化虚拟机
 
 在你想要创建虚拟机的目录下，执行以下命令进行初始化
 
@@ -73,7 +73,7 @@ config.vm.provision "shell", inline: <<-SHELL
 SHELL
 ```
 
-#### 6.启动虚拟机
+### 6.启动虚拟机
 
 在该目录下输入:
 
@@ -85,7 +85,7 @@ vagrant up
 
 ## 五、Vagrant连接
 
-#### 1.虚拟机相关登录信息
+### 1.虚拟机相关登录信息
 
 在创建虚拟机的目录下，执行以下命令进行连接：
 
@@ -94,7 +94,7 @@ $ vagrant ssh
 [vagrant@localhost ~]$
 ```
 
-#### 2.ssh登录
+### 2.ssh登录
 
 使用第三方客户端来进行连接，例如xmoba、putty、Xshell等
 
@@ -119,7 +119,7 @@ E:/OS_WORK/Node1/.vagrant/machines/default/virtualbox/private_key
 
 然后点击确定，进行连接
 
-#### 3.公网访问登录
+### 3.公网访问登录
 
 修改Vagrantfile文件，放开下面代码的#
 
@@ -127,7 +127,7 @@ E:/OS_WORK/Node1/.vagrant/machines/default/virtualbox/private_key
 # config.vm.network "public_network"
 ```
 
-#### 4.root账号登录
+### 4.root账号登录
 
 vagrant登陆后，切换到root账号
 
