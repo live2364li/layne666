@@ -62,7 +62,7 @@
           </div>
 
           {% if theme.rss %}
-            <!-- <div class="feed-link motion-element">
+            <div class="feed-link motion-element">
               {% if theme.emailfeed %}
               <a class="feed-email" href="{{ theme.emailfeed }}" rel="alternate" target="_blank">
                 <i class="fa fa-envelope"></i>
@@ -73,7 +73,7 @@
                 <i class="fa fa-rss"></i>
                 <span>RSS 订阅</span>
               </a>
-            </div> -->
+            </div>
           {% endif %}
 
           <nav class="site-state motion-element">
