@@ -9,7 +9,7 @@ categories: Java
 但**对象属性个数、顺序要和列标题保持一致**
 
 废话不多说，直接上源码以及测试代码，有误或者有不理解的地方，还望一起讨论！<!--more-->
-工具类源码如下：
+工具类源码
 ---
 
 ```java
@@ -178,7 +178,7 @@ public class ExcelUtils {
 }
 ```
 
-测试代码如下：
+测试代码
 ---
 
 ```java
@@ -204,10 +204,10 @@ public class ExcelUtils {
         System.out.println(result.get("success"));
     }
 ```
-测试结果如下：
+测试结果
 ---
-![exportExcel](../images/导出任何对象集合的数据到Excel（通用版工具类）/exportExcel001.png) 
+![exportExcel](../images/导出任何对象集合的数据到Excel（通用版工具类）/1.jpg) 
 
-![exportExcel](../images/导出任何对象集合的数据到Excel（通用版工具类）/exportExcel002.png) 
+![exportExcel](../images/导出任何对象集合的数据到Excel（通用版工具类）/2.jpg) 
 
-![exportExcel](../images/导出任何对象集合的数据到Excel（通用版工具类）/exportExcel003.png) 
+![exportExcel](../images/导出任何对象集合的数据到Excel（通用版工具类）/3.jpg) 

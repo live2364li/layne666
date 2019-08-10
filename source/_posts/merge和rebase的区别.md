@@ -38,13 +38,9 @@ merge 特点
 1. 自动创建一个新的commit
 2. 当合并时遇到冲突，修改后重新commit即可
 
-#### 优点
+**优点**：将commit的实际情况进行记录，便于以后查看
 
-将commit的实际情况进行记录，便于以后查看
-
-#### 缺点
-
-由于每次merge会自动产生一个merge commit，所以在使用一些git 的GUI tools，如果commit频繁，这样会使得feature分支很杂乱，这时可以考虑使用rebase来进行合并处理。
+**缺点**：由于每次merge会自动产生一个merge commit，所以在使用一些git 的GUI tools，如果commit频繁，这样会使得feature分支很杂乱，这时可以考虑使用rebase来进行合并处理。
 
 ### git merge - -no-ff
 
@@ -86,13 +82,9 @@ git rebase develop
 
 将commit历史进行合并
 
-#### 优点
+**优点**：项目历史比较简单，少了merge commit
 
-项目历史比较简单，少了merge commit
-
-#### 缺点
-
-当发生冲突时不容易定位问题，因为重写了历史记录
+**缺点**：当发生冲突时不容易定位问题，因为重写了历史记录
 
 ### 合并时出现冲突按如下步骤解决
 
