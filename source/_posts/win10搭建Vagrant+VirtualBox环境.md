@@ -98,7 +98,7 @@ $ vagrant ssh
 
 使用第三方客户端来进行连接，例如xmoba、putty、Xshell等
 
-```
+```shell
 ssh: 127.0.0.1  
 端口: 2222  
 用户名: vagrant  
@@ -113,7 +113,7 @@ ssh: 127.0.0.1
 
 找到刚刚上面生成的秘钥: 
 
-```
+```shell
 E:/OS_WORK/Node1/.vagrant/machines/default/virtualbox/private_key
 ```
 
@@ -123,7 +123,7 @@ E:/OS_WORK/Node1/.vagrant/machines/default/virtualbox/private_key
 
 修改Vagrantfile文件，放开下面代码的#
 
-```
+```shell
 # config.vm.network "public_network"
 ```
 
@@ -131,12 +131,12 @@ E:/OS_WORK/Node1/.vagrant/machines/default/virtualbox/private_key
 
 vagrant登陆后，切换到root账号
 
-```bash
+```shell
 $ sudo -i
 ```
 
 设置root的密码
-```bash
+```shell
 $ passwd
 ```
 
@@ -144,7 +144,7 @@ $ passwd
 
 保存退出，重启sshd服务
 
-```
+```shell
 $ systemctl restart sshd
 ```
 
