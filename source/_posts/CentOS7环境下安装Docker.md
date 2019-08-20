@@ -72,7 +72,7 @@ $ sudo yum remove docker \
 
    如果提示接受GPG密钥，请验证指纹是否匹配`060A 61C5 1B55 8A7F 742B 77AA C52F EB6B 621E 9F35`，如果匹配，则接受该指纹 。
 
-2. 要安装*特定版本*的Docker Engine - Community，请列出repo中的可用版本，然后选择并安装：
+2. 要安装特定版本的Docker Engine - Community，请列出repo中的可用版本，然后选择并安装：
 
    一个。列出并对您的仓库中可用的版本进行排序。此示例按版本号对结果进行排序，从最高到最低，并被截断：
 
