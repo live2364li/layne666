@@ -51,7 +51,7 @@ git push 的时候不会推送分支，如果一定要推送标签的话那么�
 
 refs/for 的意义在于我们提交代码到服务器之后是需要经过code review 之后才能进行merge的，而refs/heads 不需要
 
-**举例**:如果需要code review，直接执行push：
+**举例**：如果需要code review，直接执行push：
 
 ```shell
 $ git push origin mybranch
