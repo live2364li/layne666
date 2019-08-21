@@ -5,7 +5,7 @@ tags: [Git]
 categories: Git
 ---
 
-我们每天都会使用 Git ，但是很多命令依旧记不住。（可能小乌龟用多了，哈哈😆）
+我们每天都会使用 `Git` ，但是很多命令依旧记不住。（可能[小乌龟](https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=TortoiseGit&oq=TortoiseGit&rsv_pq=93a9d2c9001b8ca6&rsv_t=065amdDrbuxA%2FHqPbWKqyWXsPNjWuvDTWGM36r6fMfD1NMbQka2sEssAVvk&rqlang=cn&rsv_enter=0&rsv_dl=tb&inputT=7871&rsv_sug3=54&rsv_sug1=31&rsv_sug7=000&rsv_sug4=8915&rsv_sug=1)用多了，哈哈😆）
 
 一般来说，日常使用只要记住下图6个命令，就可以了。但是熟练使用，恐怕要记住60～100个命令。
 

@@ -7,7 +7,7 @@ categories: Maven
 
 ## 依赖传递
 
-假设我们现在有一个多模块项目，依赖关系如图，我们在 st-web 模块中引入st-dal依赖时，st-common-lib 这个依赖也会被我们引入，这个就是依赖传递，下表中列出了 scope 在依赖过程中发生的变化，列标题为被依赖的模块的 scope
+假设我们现在有一个多模块项目，依赖关系如图，我们在 st-web 模块中引入st-dal依赖时，st-common-lib 这个依赖也会被我们引入，这个就是`依赖传递`，下表中列出了 scope 在依赖过程中发生的变化，列标题为被依赖的模块的 `scope`
 
 ![](../images/如何解决Maven-jar包冲突/1.jpg)<!--more-->
 
@@ -20,13 +20,13 @@ categories: Maven
 
 ## 依赖仲裁
 
-依赖仲裁就是当项目中引入的jar包，groupId （公司域名倒过来）和artifactId （功能命令）一样，但是 version 不一样，应该选用哪一个 version ？也经常被人叫做依赖冲突
+依赖仲裁就是当项目中引入的jar包，groupId （公司域名倒过来）和artifactId （功能命令）一样，但是 version 不一样，应该选用哪一个 version ？也经常被人叫做`依赖冲突`
 
-### <font color=#E96900>**最短路径原则**</font>
+### 最短路径原则
 
 假如说我们现在的项目依赖关系如图？那么 maven 会选用 st-common-lib 的那个版本呢？
 
-答案是1.1这个版本，st-web 到 st-common-lib(1.1) 的距离为1，st-web 到 st-common-lib(1.0) 的距离为2，选择距离短的，即最短路径原则
+答案是1.1这个版本，st-web 到 st-common-lib(1.1) 的距离为1，st-web 到 st-common-lib(1.0) 的距离为2，选择距离短的，即`最短路径原则`
 
 ![](../images/如何解决Maven-jar包冲突/2.jpg)
 
@@ -36,7 +36,7 @@ categories: Maven
 mvn dependency:tree > show.txt 
 ```
 
-### <font color=#E96900>**声明优先原则**</font>
+### 声明优先原则
 
 项目依赖如图，路径一样，会选用 st-common-lib 的哪个版本呢？这就得看你在 pom 文件中先声明是哪个依赖，如果在 pom.xml 中，st-remote-invoker 写在前面，就会用1.0这个版本，如果 st-dal 写在前面，则会用1.1这个版本
 
@@ -46,7 +46,7 @@ mvn dependency:tree > show.txt
 
 去掉间接引入的jar包
 
-如不想用 spring boot 默认提供的 log，想集成第三方的 log 时，或者说上面依赖仲裁的第二个例子中，只想用 st-common-lib 的1.1版本，就可以把1.0版本排除掉
+如不想用 `spring boot` 默认提供的 log，想集成第三方的 log 时，或者说上面依赖仲裁的第二个例子中，只想用 st-common-lib 的1.1版本，就可以把1.0版本排除掉
 
 ```xml
 <dependency>

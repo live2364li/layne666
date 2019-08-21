@@ -7,14 +7,15 @@ categories: 虚拟机
 
 ## Vagrant是什么？
 
-vagrant是一个操作虚拟机的工具.是一个基于Ruby的工具，用于创建和部署虚拟化开发环境。    通过命令和配置文件来管理虚拟机,很快就能完成一套开发环境的部署,并可以打包传播,统一了开发环境,也解决了重复配置环境的麻烦。
+Vagrant 是一个操作虚拟机的工具.是一个基于 [Ruby](https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=Ruby&oq=hexo%2520next%25E4%25BB%25A3%25E7%25A0%2581%25E9%25AB%2598%25E4%25BA%25AE&rsv_pq=ef5284fb0015d8d7&rsv_t=7ca2kEiTfz5oa3ao%2BdlnZ0NkTaqNPgjwNoX7x5Mx%2FZvkkssAAJ8q6%2Fsl1Bo&rqlang=cn&rsv_enter=0&rsv_dl=tb&inputT=920&rsv_n=2&rsv_sug3=21&rsv_sug1=7&rsv_sug7=100&rsv_sug4=920) 的工具，用于创建和部署虚拟化开发环境。    通过命令和配置文件来管理虚拟机,很快就能完成一套开发环境的部署,并可以打包传播,统一了开发环境,也解决了重复配置环境的麻烦。
 
 ## Vargant的好处
 
-1. Vagrant会创建共享文件夹，用来在主机和虚拟机之间进行资源共享
-2. Vagrant通过添加box镜像进行快速部署，部署完毕后可以通过package进行打包分发，避免二次重建环境
-3. Vagrant可以使用puppet、chref等管理工具进行自动化配置部署
-4. Vagrant支持单机模拟多台机器，且支持一个配置文件Vagrantfile就可以跑分布式系统
+1. Vagrant 会创建共享文件夹，用来在主机和虚拟机之间进行资源共享
+2. Vagrant 通过添加 box 镜像进行快速部署，部署完毕后可以通过 `package` 进行打包分发，避免二次重建环境
+3. Vagrant 可以使用 puppet、chref 等管理工具进行自动化配置部署
+4. Vagrant 支持单机模拟多台机器，且支持一个配置文件`Vagrantfile`就可以跑分布式系统
+
 <!--more-->
 ## 准备工作
 
@@ -26,15 +27,15 @@ vagrant是一个操作虚拟机的工具.是一个基于Ruby的工具，用于�
 
 ### 安装VirtualBox
 
-VirtualBox安装就不多说了，一直下一步下一步就行了。
+VirtualBox 安装就不多说了，一直下一步下一步就行了。
 
 ### 安装Vagrant
 
-Vargrant下载win版的，然后一直下一步下一步就行了。
+Vargrant 下载win版的，然后一直下一步下一步就行了。
 
 ### 下载package.box
 
-去vagrant官网下载一个package.box 文件，box文件就是一个系统的镜像文件，镜像下载地址：[http://www.vagrantbox.es](http://www.vagrantbox.es/)
+去vagrant官网下载一个 `package.box` 文件，box文件就是一个系统的镜像文件，镜像下载地址：[http://www.vagrantbox.es](http://www.vagrantbox.es/)
 
 ### 把虚拟机加载到box容器中
 
@@ -44,7 +45,7 @@ Vargrant下载win版的，然后一直下一步下一步就行了。
 vagrant box add centos7 xxxx.box
 ```
 
-centos7是给虚拟机起的名字 ,随意写。然后可以通过以下命令查看，当前vagrant下有那些可用
+centos7 是给虚拟机起的名字 ,随意写。然后可以通过以下命令查看，当前 vagrant 下有那些可用
 
 ```bash
 $ vagrant box list
@@ -59,9 +60,9 @@ centos7 (virtualbox, 0)
 vagrant init centos7
 ```
 
-会生成一个Vagrantfile文件,该文件就是Vagrant的配置文件。
+会生成一个 `Vagrantfile` 文件,该文件就是 Vagrant 的配置文件。
 
-若要安装docker，则修改Vagrantfile文件，如下：
+若要安装 `Docker`，则修改 Vagrantfile 文件，如下：
 
 ```bash
 config.vm.provision "shell", inline: <<-SHELL
@@ -81,7 +82,7 @@ SHELL
 vagrant up 
 ```
 
-打开Oracle VM VirtualBox即可看到当前虚拟机的状态信息。
+打开 Oracle VM VirtualBox 即可看到当前虚拟机的状态信息。
 
 ## Vagrant连接
 
@@ -96,7 +97,7 @@ $ vagrant ssh
 
 ### ssh登录
 
-使用第三方客户端来进行连接，例如xmoba、putty、Xshell等
+使用第三方客户端来进行连接，例如 xmoba、putty、Xshell 等
 
 ```shell
 ssh: 127.0.0.1  
@@ -105,7 +106,7 @@ ssh: 127.0.0.1
 密码: vagrant 
 ```
 
-这里使用Xshell来登录
+这里使用 Xshell 来登录
 
 ![](../images/win10搭建Vagrant+VirtualBox环境/1.jpg)
 
@@ -121,7 +122,7 @@ E:/OS_WORK/Node1/.vagrant/machines/default/virtualbox/private_key
 
 ### 公网访问登录
 
-修改Vagrantfile文件，放开下面代码的#
+修改 Vagrantfile 文件，放开下面代码的#
 
 ```shell
 # config.vm.network "public_network"
@@ -129,25 +130,27 @@ E:/OS_WORK/Node1/.vagrant/machines/default/virtualbox/private_key
 
 ### root账号登录
 
-vagrant登陆后，切换到root账号
+vagrant 登陆后，切换到 root 账号
 
 ```shell
 $ sudo -i
 ```
 
-设置root的密码
+设置 root 的密码
 ```shell
 $ passwd
 ```
 
-修改 `/etc/ssh/sshd_config` 文件，把 PermitRootLogin 属性 改为yes，并把前面的#去掉, PasswordAuthentication 改为yes，并且去掉#。
+修改`/etc/ssh/sshd_config`文件
 
-保存退出，重启sshd服务
+把 PermitRootLogin 属性改为 yes，并把前面的 # 去掉，PasswordAuthentication 改为 yes，并且去掉 #
+
+保存退出，重启 `sshd` 服务
 
 ```shell
 $ systemctl restart sshd
 ```
 
-再通过xshell连接的时候，就可以用账号密码，root来登录了
+再通过 Xshell 连接的时候，就可以用账号密码，root 来登录了
 
 参考博文：https://blog.csdn.net/u011781521/article/details/80275212
