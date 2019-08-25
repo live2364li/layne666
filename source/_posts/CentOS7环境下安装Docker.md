@@ -2,6 +2,7 @@
 title: CentOS7环境下安装Docker
 date: 2019-08-21 00:40:08
 tags: [CentOS, Docker]
+categories: CentOS
 ---
 
 ## 先决条件
