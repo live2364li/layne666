@@ -1,5 +1,5 @@
 ---
-title: java对象的浅克隆和深克隆
+title: Java对象的浅克隆和深克隆
 date: 2019-09-02 16:09:41
 tags: [Java, 克隆]
 categories: Java
@@ -21,12 +21,12 @@ categories: Java
 
   ```java
   @Override
-      protected Object clone() throws CloneNotSupportedException {
-          return super.clone();
-      }
+  protected Object clone() throws CloneNotSupportedException {
+      return super.clone();
+  }
   ```
 
-- 属性是String的情况，String也是一个类，那String引用类型吗？String的表现有的像基本类型，归根到底就是因为`String不可改变`，克隆之后俩个引用指向同一个String，但当修改其中的一个，改的不是String的值，却是新生成一个字符串，让被修改的引用指向新的字符串。外表看起来就像基本类型一样。
+- 属性是String的情况，String也是一个类，那String引用类型吗？String的表现有的像基本类型，归根到底就是因为`String不可改变`，克隆之后俩个引用指向同一个String，但当修改其中的一个，改的不是String的值，却是新生成一个字符串，让被修改的引用指向新的字符串。外表看起来就像基本类型一样。<!--more-->
 
 ## 浅克隆
 
@@ -98,10 +98,10 @@ public class User implements Cloneable{
 
 ```java
 输出结果为：　　　
-	原user：User{name='user', age=22, mark=Mark{chinese=100, math=99}}
-	克隆的user：User{name='user', age=22, mark=Mark{chinese=100, math=99}}　　　
-	修改后的原user：User{name='user', age=22, mark=Mark{chinese=100, math=60}}
-	修改后的克隆user：User{name='user', age=22, mark=Mark{chinese=100, math=60}}
+    原来的user：User{name='user', age=22, mark=Mark{chinese=100, math=99}}
+    克隆的user：User{name='user', age=22, mark=Mark{chinese=100, math=99}}　　　
+    修改后原来的user：User{name='user', age=22, mark=Mark{chinese=100, math=60}}
+    修改后克隆的user：User{name='user', age=22, mark=Mark{chinese=100, math=60}}
 ```
 
 > 很清楚的看到user的mark更改后，被克隆的user也修改了。而要想不被影响，就需要深克隆了。
@@ -181,10 +181,10 @@ public class User implements Cloneable{
 
 ```java
 输出结果为：　
-    原user：User{name='user', age=22, mark=Mark{chinese=100, math=99}}
+    原来的user：User{name='user', age=22, mark=Mark{chinese=100, math=99}}
     克隆的user：User{name='user', age=22, mark=Mark{chinese=100, math=99}}
-    修改后的原user：User{name='user', age=22, mark=Mark{chinese=100, math=60}}
-    修改后的克隆user：User{name='user', age=22, mark=Mark{chinese=100, math=99}}
+    修改后原来的user：User{name='user', age=22, mark=Mark{chinese=100, math=60}}
+    修改后克隆的user：User{name='user', age=22, mark=Mark{chinese=100, math=99}}
 ```
 
 ### 方式二：序列化
@@ -199,7 +199,7 @@ class Mark implements Serializable {
     public Mark(int chinese, int math) {
         this.chinese = chinese;
         this.math = math;
-}
+	}
     public void setChinese(int chinese) {
         this.chinese = chinese;
     }
@@ -255,10 +255,10 @@ public class User implements Serializable{
 
 ```java
 输出结果：　　　　
-    原user：User{name='user', age=22, mark=Mark{chinese=100, math=99}}
+    原来的user：User{name='user', age=22, mark=Mark{chinese=100, math=99}}
     克隆的user：User{name='user', age=22, mark=Mark{chinese=100, math=99}}
-    修改后的原user：User{name='user', age=22, mark=Mark{chinese=100, math=60}}
-    修改后的克隆user：User{name='user', age=22, mark=Mark{chinese=100, math=99}}
+    修改后原来的user：User{name='user', age=22, mark=Mark{chinese=100, math=60}}
+    修改后克隆的user：User{name='user', age=22, mark=Mark{chinese=100, math=99}}
 ```
 
 参考博文：https://www.cnblogs.com/gollong/p/9668699.html
