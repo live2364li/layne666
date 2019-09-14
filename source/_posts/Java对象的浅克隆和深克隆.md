@@ -30,7 +30,7 @@ categories: Java
 
 ## 浅克隆
 
-浅克隆就是引用类型的属性无法完全复制，类User中包含成绩属性Mark，Mark是由Chinese和math等等组成的，浅克隆失败的例子。
+浅克隆就是引用类型的属性无法完全复制，类User中包含成绩属性Mark，Mark是由chinese和math等等组成的，浅克隆失败的例子。
 
 ```java
 class Mark{
@@ -86,12 +86,12 @@ public class User implements Cloneable{
         Mark mark = new Mark(100,99);
         User user = new User("user",22,mark);
         User userClone = (User) user.clone();
-        System.out.println("原user："+user);
+        System.out.println("原来的user："+user);
         System.out.println("克隆的user："+userClone);
         //修改引用类型的mark属性
         user.mark.setMath(60);
-        System.out.println("修改后的原user："+user);
-        System.out.println("修改后的克隆user："+userClone);
+        System.out.println("修改后原来的user："+user);
+        System.out.println("修改后克隆的user："+userClone);
     }
 }
 ```
@@ -169,12 +169,12 @@ public class User implements Cloneable{
         Mark mark = new Mark(100,99);
         User user = new User("user",22,mark);
         User userClone = (User) user.clone();
-        System.out.println("原user："+user);
+        System.out.println("原来的user："+user);
         System.out.println("克隆的user："+userClone);
         //修改引用类型的mark属性
         user.mark.setMath(60);
-        System.out.println("修改后的原user："+user);
-        System.out.println("修改后的克隆user："+userClone);
+        System.out.println("修改后原来的user："+user);
+        System.out.println("修改后克隆的user："+userClone);
     }
 }
 ```
@@ -244,11 +244,11 @@ public class User implements Serializable{
         ObjectInputStream oi = new ObjectInputStream(bi);
         User userClone = (User) oi.readObject();//反序列化
 
-        System.out.println("原user："+user);
+        System.out.println("原来的user："+user);
         System.out.println("克隆的user："+userClone);
         user.mark.setMath(59);
-        System.out.println("修改后的原user："+user);
-        System.out.println("修改后的克隆user："+userClone);
+        System.out.println("修改后原来的user："+user);
+        System.out.println("修改后克隆的user："+userClone);
     }
 }
 ```
