@@ -23,7 +23,7 @@ favicon:
   narmal: /images/favicon.ico
   hidden: /images/failure.ico
   show_text: (/≧▽≦/)咦！又好了！
-  hide_text: (●—●)喔哟，崩溃啦！
+  hide_text: (●—●)哦豁，崩溃啦！
   apple_touch_icon: /images/Layne666.jpg
   safari_pinned_tab: /images/Layne666.jpg
   #android_manifest: /images/manifest.json
@@ -806,7 +806,7 @@ css: css
 js: js
 images: images
 
-header_bg: /images/004.jpg
+header_bg: /images/banner002.jpg
 
 card:
   avatar: /images/card.jpg
