@@ -1,6 +1,6 @@
 # layne666.site
 
-<a title="layne666.site" target="_blank" href="https://github.com/Layne666/layne666.site"><img src="https://img.shields.io/github/repo-size/Layne666/layne666.site"></a> <a title="最后一次提交" target="_blank" href="https://github.com/Layne666/layne666.site/commits/master"><img src="https://img.shields.io/github/last-commit/layne666/layne666.site"></a>
+<a title="Travis CI" target="_blank" href="https://travis-ci.org/Layne666/layne666.site"><img src="https://img.shields.io/travis/Layne666/layne666.site.svg?style=flat-square"></a> <a title="layne666.site" target="_blank" href="https://github.com/Layne666/layne666.site"><img src="https://img.shields.io/github/repo-size/Layne666/layne666.site"></a> <a title="最后一次提交" target="_blank" href="https://github.com/Layne666/layne666.site/commits/master"><img src="https://img.shields.io/github/last-commit/layne666/layne666.site"></a>
 
 > My lovely blog, the theme styles are modified and added based on [Hexo-theme-sagiri](https://github.com/DIYgod/hexo-theme-sagiri)
 
