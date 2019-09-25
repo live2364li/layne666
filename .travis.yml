@@ -24,7 +24,7 @@ after_script:
   - git config user.name "Layne666"  #修改name
   - git config user.email "791270330@qq.com"  #修改email
   - git add .
-  - git commit -m "update"
+  - git commit -m "update by Travis-CI"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" hexo-public:hexo-public  #GH_TOKEN是在Travis中配置token的名称
 
 branches:
