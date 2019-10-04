@@ -19,17 +19,27 @@ script:
   - hexo g  #生成
 
 after_script:
-  - cd ./public
-  - git init
-  - git config user.name "Layne666"  #修改name
-  - git config user.email "791270330@qq.com"  #修改email
-  - git add .
-  - git commit -m "update by Travis-CI"
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:hexo-public  #GH_TOKEN是在Travis中配置token的名称
+  - curl -v -o qshell.zip http://devtools.qiniu.com/qshell-v2.3.5.zip
+  - unzip qshell.zip -d qshell
+  - cd qshell
+  - ln -s qshell_linux_x64 qshell
+  - ./qshell account ${QINIU_AK} ${QINIU_SK} layne
+  - ./qshell listbucket layne -o layne.list.txt   
+  - ./qshell batchdelete --force layne -i layne.list.txt   #删除空间中的所有文件
+  - ./qshell qupload2 --src-dir=../public --bucket=layne  #上传至七牛云
+  - echo "https://layne666.site/" > torefresh.txt
+  - ./qshell cdnrefresh --dirs -i torefresh.txt  #刷新CDN缓存
+#  - cd ../public
+#  - git init
+#  - git config user.name "Layne666"  #修改name
+#  - git config user.email "791270330@qq.com"  #修改email
+#  - git add .
+#  - git commit -m "update by Travis-CI"
+#  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:hexo-public  #GH_TOKEN是在Travis中配置token的名称
 
 branches:
   only:
-    - master  #只监测hexo分支，hexo是我的分支的名称，可根据自己情况设置
-env:
- global:
-   - GH_REF: github.com/Layne666/layne666.site.git  #设置GH_REF，注意更改yourname
+    - master  #只监测master分支，可根据自己情况设置
+#env:
+# global:
+#   - GH_REF: github.com/Layne666/layne666.site.git  #设置GH_REF，注意更改yourname
