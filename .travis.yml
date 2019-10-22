@@ -27,7 +27,7 @@ after_script:
   - ./qshell listbucket layne -o layne.list.txt   
   - ./qshell batchdelete --force layne -i layne.list.txt   #删除空间中的所有文件
   - ./qshell qupload2 --src-dir=../public --bucket=layne  #上传至七牛云
-  - echo "https://layne666.site/" > torefresh.txt
+  - echo "https://layne666.cn/" > torefresh.txt
   - ./qshell cdnrefresh --dirs -i torefresh.txt  #刷新CDN缓存
 #  - cd ../public
 #  - git init
@@ -42,4 +42,4 @@ branches:
     - master  #只监测master分支，可根据自己情况设置
 #env:
 # global:
-#   - GH_REF: github.com/Layne666/layne666.site.git  #设置GH_REF，注意更改yourname
+#   - GH_REF: github.com/Layne666/layne666.cn.git  #设置GH_REF，注意更改yourname
