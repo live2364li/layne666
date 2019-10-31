@@ -125,7 +125,8 @@ scheme: Pisces
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 social:
   GitHub: https://github.com/Layne666 || <i class="fa fa-fw fa-github"></i>
-  QQ: tencent://message/?uin=791270330&Menu=yes& Service=300&sigT=42a1e5347953b64c5ff3980f8a6e644d4b31456cb0b6ac6b27663a3c4dd0f4aa14a543b1716f9d45 || <i class="fa fa-fw fa-qq"></i>
+  #QQ: tencent://message/?uin=791270330&Menu=yes& Service=300&sigT=42a1e5347953b64c5ff3980f8a6e644d4b31456cb0b6ac6b27663a3c4dd0f4aa14a543b1716f9d45 || <i class="fa fa-fw fa-qq"></i>
+  我的网盘: https://pan.layne666.cn || <i class="fa fa-fw fa-cloud-download"></i>
   蕾姆图集: https://rem.layne666.cn || <i class="fa fa-fw fa-heart"></i>
   #我的网盘: https://download.layne666.cn || <i class="fa fa-fw fa-cloud-download"></i>
   iHopess: https://ihopess.layne666.cn || <i class="fa fa-fw fa-group"></i>
