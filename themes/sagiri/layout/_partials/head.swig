@@ -192,3 +192,6 @@
 {% endif %}
 
 {% include 'head/custom-head.swig' %}
+
+{# Valine #}
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
