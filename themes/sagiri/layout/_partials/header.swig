@@ -17,7 +17,9 @@
               {% for name, path in theme.submenu[itemName] %}
                 {% set itemName = name.toLowerCase() %}
                 <li class="submenu-item submenu-item-{{ itemName | replace(' ', '-') }}">
-                  <a href="{{ url_for(path) | trim }}" rel="section" target="_blank">
+                  <a href="{{ url_for(path) | trim }}" rel="section" 
+				  {% if path.substr(0, 1) == '/' %}target="_self">{% endif %}
+				  {% if path.substr(0, 1) != '/' %}target="_blank">{% endif %}
                     {{ __('menu.' + name) | replace('menu.', '') }}
                   </a>
                 </li>

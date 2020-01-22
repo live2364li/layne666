@@ -102,6 +102,10 @@ submenu:
     导航主页: https://home.layne666.cn/ 
     私人网盘: https://download.layne666.cn/
     私人图床: https://img.layne666.cn/
+  归档:
+    2020年: /archives/2020
+    2019年: /archives/2019
+    2018年: /archives/2018
    
 
 # Enable/Disable menu icons.
@@ -862,4 +866,4 @@ codeblock:
       show_result: true
 
 # Theme version
-version: 0.0.5
+version: 1.0.1
