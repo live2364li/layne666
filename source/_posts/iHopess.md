@@ -3,7 +3,6 @@ title: iHopess
 date: 2019-10-07 14:32:42
 tags: iHopess
 categories: iHopess
-top: 3
 ---
 
 <img src="../images/美琴.gif" alt="" data-action="zoom" style="display: inline-block;">从建这个`Hexo`博客开始到现在也快一年了，当时建博客的初衷是一方面是为了能把自己学到的东西作为笔记记下来，另一方面是希望自己写的东西对其他人也有帮助。
