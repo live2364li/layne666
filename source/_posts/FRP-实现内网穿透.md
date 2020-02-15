@@ -10,7 +10,7 @@ top: 2
 
 ## FRP是什么
 
-简单地说，[frp](https://github.com/fatedier/frp/blob/master/README_zh.md) 就是一个[反向代理软件](https://www.zhihu.com/question/24723688)，它体积轻量但功能很强大，可以**使处于内网或防火墙后的设备对外界提供服务**，它支持HTTP、TCP、UDP等众多协议。我们今天仅讨论TCP和UDP相关的内容。<!--more-->
+简单地说，[frp](https://github.com/fatedier/frp/blob/master/README_zh.md) 就是一个[反向代理软件](https://www.zhihu.com/question/24723688)，它体积轻量但功能很强大，可以**使处于内网或防火墙后的设备对外界提供服务**，它支持HTTP、TCP、UDP等众多协议。<!--more-->
 
 ## 软件包下载地址
 
