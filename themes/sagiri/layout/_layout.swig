@@ -48,6 +48,8 @@
         {% block footer %}{% endblock %}
       </div>
     </footer>
+	
+	<div id="lolijump"><img src="/images/lolijump.gif"></div>
 
     {% if not theme.sidebar.b2t %}
       <div class="back-to-top">
