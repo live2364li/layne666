@@ -819,7 +819,7 @@ css: css
 js: js
 images: images
 
-header_bg: /images/banner002.jpg
+header_bg: /images/banner004.jpg
 
 card:
   avatar: /images/card.jpg
