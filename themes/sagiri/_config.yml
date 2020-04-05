@@ -822,7 +822,7 @@ images: images
 header_bg: /images/banner004.jpg
 
 card:
-  avatar: /images/card.jpg
+  avatar: /images/card001.jpg
   name: <span style="opacity:.2;"></span>Layne666
   description: 不多说了，诸位，拔剑吧！
 
