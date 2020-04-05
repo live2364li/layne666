@@ -12,9 +12,9 @@ categories: Hexo
 -bash: hexo: command not found
 ```
 
-解决方案：
+### 解决方案：
 
-1、找到对应安装的位置
+#### 找到对应安装的位置
 
 ```shell
 [root@xxx ~]# find / -name hexo 
@@ -28,7 +28,7 @@ categories: Hexo
 /var/lib/jenkins/workspace/blog/node_modules/hexo/bin/hexo
 ```
 
-2、添加环境变量
+#### 添加环境变量
 
 ```shell
 [root@xxx bin]# ln -s /usr/local/nodejs/lib/node_modules/hexo-cli/bin/hexo /usr/local/bin/hexo
