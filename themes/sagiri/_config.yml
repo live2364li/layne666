@@ -66,14 +66,14 @@ index_with_subtitle: false
 # Value before `||` delimeter is the target link.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
-  首页: / || home
+  首页: /|| home
   #抓到我: javascript:; || sign-language
   #实验室: javascript:; || flask
   #导航站: javascript:; || internet-explorer
-  归档: /archives/ || archive
-  标签墙: /tags/ || tags
-  友情链接: /friends/ || mars
-  留言板: /message/ || pencil
+  归档: /archives/|| archive
+  标签墙: /tags/|| tags
+  友情链接: /friends/|| mars
+  留言板: /message/|| pencil
   #关于: /about/ || rocket
   
 
