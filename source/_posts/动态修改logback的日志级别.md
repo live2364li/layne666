@@ -5,11 +5,11 @@ tags: [Java,Logback]
 categories: Logback
 ---
 
-<img src="https://layne666.cn/images/%E7%BE%8E%E7%90%B4.gif" alt="" data-action="zoom" style="display: inline-block;"> 前段时间，威哥曾问我：`线上环境的logback日志级别怎么动态修改？`我：？？？
+前段时间，威哥曾问我：`线上环境的logback日志级别怎么动态修改？`我：？？？
 
 ![](../images/动态修改logback的日志级别/1.jpg)
 
-没了解过呀，不知道咋改。利用空闲时间研究了下，于是就有了这篇文章！<!--more-->
+<img src="https://layne666.cn/images/%E7%BE%8E%E7%90%B4.gif" alt="" data-action="zoom" style="display: inline-block;"> 没了解过呀，不知道咋弄。利用空闲时间研究了下，于是就有了这篇文章！<!--more-->
 
 ## logback.xml自动扫描重新加载配置
 
@@ -25,7 +25,7 @@ configuration 标签对应的处理类是`ConfigurationAction`，具体代码如
 
 ![](../images/动态修改logback的日志级别/3.png)
 
-在`ReconfigureOnChangeTask`的`run`方法里，找到监听的文件，然后判断为不为空，不为空再判断有没有改，这个改是通过最后修改时间判断的。
+在`ReconfigureOnChangeTask`的`run`方法里，找到监听的文件，然后判断文件有没有，有的话再判断有没有改，这个改是通过最后修改时间判断的。
 
 ![](../images/动态修改logback的日志级别/4.png)
 
@@ -96,11 +96,11 @@ public String changeLevel(String rootLevel, String singleLevel, String singlePat
 
 ![](../images/动态修改logback的日志级别/7.png)
 
-这时候，我们启动完项目之后，访问 http://ip:port/context-path/actuator/loggers 就可以看到当前项目所有包/类的日志输出级别了。
+这时候，我们启动完项目之后，访问`http://ip:port/context-path/actuator/loggers`就可以看到当前项目所有包/类的日志输出级别了。
 
 ![](../images/动态修改logback的日志级别/8.png)
 
-如果我们想要查看单个`logger`的日志配置信息，可以访问如下格式的：
+如果我们想要查看单个`logger`的日志配置信息，可以访问如下格式的地址：
 
 ```java
 http://ip:port/context-path/actuator/loggers/{name}
@@ -118,7 +118,7 @@ loggers endpoint 同时提供了在应用运行时改变日志级别的能力，
 
 ### 源码解析
 
-org.springframework.boot.actuate.logging.LoggersEndpoint 提供两个`readOperation`和一个`writeOperation`，分别用来读取和更改 logger 的 level。比如更改 logger 的 level 时，源码如下：
+org.springframework.boot.actuate.logging.LoggersEndpoint 类提供两个`readOperation`和一个`writeOperation`，分别用来读取和更改 logger 的 level。比如更改 logger 的 level 时，源码如下：
 
 ![](../images/动态修改logback的日志级别/12.png)
 
