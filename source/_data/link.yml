@@ -1,0 +1,27 @@
+- class_name: 友情链接
+  class_desc: 友情链接
+  link_list:
+    - name: 往后余生
+      link: https://yuefengs.top
+      avatar: /images/link/zhuyuefeng.jpg
+      descr: 朱大哥的个人博客
+    - name: D大
+      link: https://88250.b3log.org
+      avatar: /images/link/D.png
+      descr: 开源程序员，自由职业者
+    - name: 海加尔金鹰
+      link: https://www.hjljy.cn
+      avatar: /images/link/hjljy.jpg
+      descr: 如野草般一岁一枯荣
+    - name: TDsimon
+      link: https://www.simon96.online
+      avatar: /images/link/TDsimon.png
+      descr: 一个若森数字的工作者
+    - name: 虎吟
+      link: https://huing.cn
+      avatar: https://huing-1251298234.file.myqcloud.com/logo.png
+      descr: 今日我，与你又试肩并肩
+    - name: 极客笔记
+      link: https://guoch.xyz
+      avatar: /images/link/极客笔记.png
+      descr: 一个苦逼的CS狗

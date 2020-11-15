@@ -6,4 +6,8 @@ type: "about"
 comments: false
 ---
 
-![](/images/about.jpg)
+**滴滴滴！！！**
+
+<p style="text-align:center">
+	<img src="/images/about.jpg"/>
+</p>
