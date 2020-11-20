@@ -1,5 +1,6 @@
 ---
 title: 利用 GitLab 实现 Hexo 博客的 CI/CD
+cover: /images/利用GitLab实现Hexo博客的CICD/1.png
 date: 2020-09-05 16:26:10
 updated: 2020-09-05 16:26:10
 categories: 
