@@ -3,7 +3,7 @@
   link_list:
     - name: 往后余生
       link: https://yuefengs.top
-      avatar: /images/link/zhuyuefeng.jpg
+      avatar: https://yuefengs.top/img/avatar.png
       descr: 朱大哥的个人博客
     - name: D大
       link: https://88250.b3log.org
