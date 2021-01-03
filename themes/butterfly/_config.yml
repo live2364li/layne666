@@ -380,7 +380,7 @@ footer:
   copyright: true # Copyright of theme and framework
   ICP: # Chinese ICP License
     enable: true
-    url:
+    url: https://beian.miit.gov.cn
     text: 皖ICP备18026712号
     icon: /img/icp.png
 
