@@ -10,6 +10,4 @@ type: "link"
 网站图标：https://layne666.cn/img/avatar.png
 网站名称：Layne666 - Blog
 网站地址：https://layne666.cn
-网站简介：不多说了，诸位，拔剑吧！
-
----
+网站简介：不多说了，诸位，拔剑吧！ 
