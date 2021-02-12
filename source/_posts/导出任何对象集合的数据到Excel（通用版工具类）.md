@@ -1,16 +1,22 @@
 ---
 title: 导出任何对象集合的数据到Excel（通用版工具类）
-date: '2019-03-07 01:51:19'
-updated: '2019-03-07 01:57:28'
-tags: [Java, Excel, 反射]
-categories: Java
+copyright_author_href: https://layne666.cn
+cover: https://bed.layne666.cn/images/2021/02/12/ddd2be2ecdb2ad293b82c3d30b2b0623.png
+date: 2019-03-07 01:51:19
+updated: 2019-03-07 01:57:28
+categories: 
+  - Java
+tags: 
+  - Java
+  - Excel
+  - 反射
 ---
-该工具类可以导出任何对象集合的数据到Excel（`对象必须已有getter方法`）
-但**对象属性个数、顺序要和列标题保持一致**
 
-废话不多说，直接上源码以及测试代码，有误或者有不理解的地方，还望一起讨论！<!--more-->
-工具类源码
----
+该工具类可以导出任何对象集合的数据到Excel（`对象必须已有getter方法`），但**对象属性个数、顺序要和列标题保持一致**。
+
+废话不多说，直接上源码以及测试代码，有误或者有不理解的地方，还望一起讨论！
+
+## 工具类源码
 
 ```java
 /**
@@ -178,8 +184,7 @@ public class ExcelUtils {
 }
 ```
 
-测试代码
----
+## 测试代码
 
 ```java
     @RequestMapping("/exportExcel")
@@ -204,10 +209,11 @@ public class ExcelUtils {
         System.out.println(result.get("success"));
     }
 ```
-测试结果
----
-![exportExcel](../images/导出任何对象集合的数据到Excel（通用版工具类）/1.jpg) 
 
-![exportExcel](../images/导出任何对象集合的数据到Excel（通用版工具类）/2.jpg) 
+## 测试结果
 
-![exportExcel](../images/导出任何对象集合的数据到Excel（通用版工具类）/3.jpg) 
+![c22f5693162b9819a467ca8ee7c9ef9a.png](https://bed.layne666.cn/images/2021/02/12/c22f5693162b9819a467ca8ee7c9ef9a.png)
+
+![ddd2be2ecdb2ad293b82c3d30b2b0623.png](https://bed.layne666.cn/images/2021/02/12/ddd2be2ecdb2ad293b82c3d30b2b0623.png)
+
+![c5938bf809be58115e96b31477a2ddce.png](https://bed.layne666.cn/images/2021/02/12/c5938bf809be58115e96b31477a2ddce.png)

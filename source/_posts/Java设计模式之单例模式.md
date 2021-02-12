@@ -1,15 +1,21 @@
 ---
 title: Java设计模式之单例模式
+copyright_author_href: https://layne666.cn
+cover: https://bed.layne666.cn/images/2021/02/12/7d29bfc50c87cfc06c4e8c13c0afb6fb.webp
 date: 2019-09-17 19:17:24
-tags: [Java,设计模式]
-categories: 设计模式
+updated: 2019-09-17 19:17:24
+categories: 
+  - 设计模式
+tags: 
+  - Java
+  - 设计模式
 ---
 
 ## 模式介绍
 
 所谓类的单例设计模式，就是 采取一定的方法保证在整个的软件系统中，对某个类`只能存在一个对象实例`，并且该类`只提供一个取得其对象实例的方法(静态方法)`。
 
-比如 Hibernate 的 SessionFactory，它充当数据存储源的代理，并负责创建`Session`对象。SessionFactory 并不是轻量级的，一般情况下，一个项目通常只需要一个`SessionFactory`就够，这是就会使用到单例模式。<!--more-->
+比如 Hibernate 的 SessionFactory，它充当数据存储源的代理，并负责创建`Session`对象。SessionFactory 并不是轻量级的，一般情况下，一个项目通常只需要一个`SessionFactory`就够，这是就会使用到单例模式。
 
 ## 八种实现方式
 

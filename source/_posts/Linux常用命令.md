@@ -1,10 +1,17 @@
 ---
 title: Linux常用命令
-date: '2019-01-08 22:35:06'
-updated: '2019-02-08 17:19:46'
-tags: [Linux]
+copyright_author_href: https://layne666.cn
+cover: https://bed.layne666.cn/images/2021/02/12/e37d10af5a31d393f59dc32c7c73d633.jpg
+date: 2019-01-08 22:35:06
+updated: 2019-02-08 17:19:46
+categories: 
+  - Linux
+tags: 
+  - Linux
 ---
+
 ## 关机&重启命令
+
 **基本介绍:**
 
 ```bash
@@ -15,27 +22,35 @@ halt                关机，作用和上面一样
 reboot              现在重新启动计算机
 sync                把内存的数据同步到磁盘
 ```
+
 **细节说明**
-<font color=#FF0000>**不管是重启系统还是关闭系统，首先要运行sync命令，把内存中的数据写到磁盘中！**</font><!--more-->
+<font color=#FF0000>**不管是重启系统还是关闭系统，首先要运行sync命令，把内存中的数据写到磁盘中！**</font>
 
 ## 用户管理命令
+
 ### 添加用户
+
 ```bash
 useradd layne       添加layne这个用户
 ```
+
 **细节说明**
 
 1. 当创建用户成功后，会自动地创建和用户同名的家目录
 2. 也可以通过 useradd -d 指定目录 新的用户名，给新创建的用户指定家目录
 
 ### 给用户指定或修改密码
+
 ```bash
 passwd layne        添加layne这个用户
 ```
+
 ### 删除用户
+
 ```bash
 userdel layne       删除layne这个用户
 ```
+
 **应用案例**
 
 1. 删除用户xiaoming，但是要保留家目录
@@ -48,18 +63,23 @@ userdel -r layne
 * 在删除用户时，我们一般不会把家目录删除！
 
 ### 查询用户信息
+
 ```bash
 id layne           查看layne这个用户信息
 ```
-![linux](../images/Linux常用命令/1.png) 
+
+![236e346699b22f6103c4b8c0676c5874.png](https://bed.layne666.cn/images/2021/02/12/236e346699b22f6103c4b8c0676c5874.png)
+
 **细节说明**
 
 - 当用户不存在时，返回“无此用户”！
 
 ### 切换用户
+
 ```bash
 su - layne         切换到layne这个用户
 ```
+
 **细节说明**
 
 1. 从权限高的用户切换到权限低的用户，不需要输入密码，反之需要。
@@ -77,9 +97,3 @@ su和su - 的区别：
 
 sudo 通过/etc/sudoers配置文件来限制用户的权限。
 ```
-
-
-
-
-
-

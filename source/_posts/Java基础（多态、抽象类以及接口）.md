@@ -1,18 +1,27 @@
 ---
 title: Java基础（多态、抽象类以及接口）
-date: '2019-01-20 21:52:08'
-updated: '2019-02-08 17:20:07'
-tags: [Java, 多态, 接口, 抽象类]
-categories: Java
+copyright_author_href: https://layne666.cn
+cover: https://bed.layne666.cn/images/2021/02/12/89db243c90053e1a4c0b19b59e932314.webp
+date: 2019-01-20 21:52:08
+updated: 2019-02-08 17:20:07
+categories: 
+  - Java
+tags: 
+  - Java
+  - 多态
+  - 接口
+  - 抽象类
 ---
+
 ## 面向对象之多态
+
 多态(polymorphic)概述：事物存在的多种形态
 体现：父类的引用或者接口的引用指向了自己的子类对象。
 **多态前提**：
 
 * a:要有继承关系。
 * b:要有方法重写。
-* c:要有父类引用指向子类对象。<!--more-->
+* c:要有父类引用指向子类对象。
 
 ```java
 class Fu {

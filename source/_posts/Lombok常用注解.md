@@ -1,9 +1,15 @@
 ---
 title: Lombok常用注解
-date: '2019-04-04 14:50:20'
-tags: [lombok]
-categories: Java
+copyright_author_href: https://layne666.cn
+cover: https://bed.layne666.cn/images/2021/02/12/737dfc33bb084f652c63cab03d1378e1.jpg
+date: 2019-04-04 14:50:20
+updated: 2019-04-04 14:50:20
+categories: 
+  - Java
+tags: 
+  - Lombok
 ---
+
 ## @NonNull
 
 说到 `NullPointerException`，可能会是所有 `Java` 搬砖工的噩梦吧？
@@ -17,7 +23,6 @@ categories: Java
 
 > null 检查看起来像if (param == null) throw new NullPointerException("param is marked @NonNull but is null"); 并将此语句插入到方法的最顶层。 对于构造函数，将在任何显式 this() 或 super() 调用之后立即插入非空检查。
 
-<!--more-->
 代码示例如下：
 ```java
 public NonNullExample(@NonNull Person person) {

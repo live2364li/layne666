@@ -1,8 +1,14 @@
 ---
 title: Java设计模式之六大原则
+copyright_author_href: https://layne666.cn
+cover: https://bed.layne666.cn/images/2021/02/12/12710de638f991f87615fbccdf0faf16.jpg
 date: 2019-09-10 09:55:16
-tags: [Java,设计模式]
-categories: 设计模式
+updated: 2019-09-10 09:55:16
+categories: 
+  - 设计模式
+tags: 
+  - Java
+  - 设计模式
 ---
 
 ## 目的
@@ -17,7 +23,7 @@ categories: 设计模式
 
 ## 六大原则
 
-设计模式原则，其实就是`程序员在编程时，应当遵守的原则`，也是各种`设计模式的基础`(即：设计模式为什么这样设计的依据) 。<!--more-->
+设计模式原则，其实就是`程序员在编程时，应当遵守的原则`，也是各种`设计模式的基础`(即：设计模式为什么这样设计的依据) 。
 
 ### 单一职责原则
 

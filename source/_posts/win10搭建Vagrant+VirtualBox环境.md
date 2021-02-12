@@ -1,8 +1,13 @@
 ---
-title: win10搭建Vagrant+VirtualBox环境
-date: '2019-07-25 12:44:13'
-tags: [Vagrant]
-categories: 虚拟机
+title: Win10搭建Vagrant+VirtualBox环境
+copyright_author_href: https://layne666.cn
+cover: https://bed.layne666.cn/images/2021/02/12/286b3ad48f45bfe13a465f834004e163.png
+date: 2019-07-25 12:44:13
+updated: 2019-07-25 12:44:13
+categories: 
+  - 虚拟机
+tags: 
+  - Vagrant
 ---
 
 ## Vagrant是什么？
@@ -16,7 +21,6 @@ Vagrant 是一个操作虚拟机的工具.是一个基于 [Ruby](https://www.bai
 3. Vagrant 可以使用 puppet、chref 等管理工具进行自动化配置部署
 4. Vagrant 支持单机模拟多台机器，且支持一个配置文件`Vagrantfile`就可以跑分布式系统
 
-<!--more-->
 ## 准备工作
 
 1. vagrant_2.2.5_x86_64.msi
@@ -108,9 +112,9 @@ ssh: 127.0.0.1
 
 这里使用 Xshell 来登录
 
-![](../images/win10搭建Vagrant+VirtualBox环境/1.jpg)
+![286b3ad48f45bfe13a465f834004e163.png](https://bed.layne666.cn/images/2021/02/12/286b3ad48f45bfe13a465f834004e163.png)
 
-![](../images/win10搭建Vagrant+VirtualBox环境/2.jpg)
+![710143cbd85429e89af39e98276757a5.png](https://bed.layne666.cn/images/2021/02/12/710143cbd85429e89af39e98276757a5.png)
 
 找到刚刚上面生成的秘钥: 
 

@@ -1,6 +1,6 @@
 ---
 title: 利用 GitLab 实现 Hexo 博客的 CI/CD
-cover: /images/利用GitLab实现Hexo博客的CICD/1.png
+cover: https://bed.layne666.cn/images/2021/02/12/2a7873baaa7565d72785dc5c2c750f2f.png
 date: 2020-09-05 16:26:10
 updated: 2020-09-05 16:26:10
 categories: 
@@ -23,8 +23,8 @@ Gitlab是常用的开源git代码管理工具之一，随着发展也推出了ci
 
 > 官网： https://docs.gitlab.com/ee/ci/README.html
 
-![](/images/利用GitLab实现Hexo博客的CICD/1.png)
-<!--more-->
+![2a7873baaa7565d72785dc5c2c750f2f.png](https://bed.layne666.cn/images/2021/02/12/2a7873baaa7565d72785dc5c2c750f2f.png)
+
 # 特性
 
 ```text
@@ -34,8 +34,7 @@ gitlab ci/cd是由独立的runner程序完成，runner采用go语言编写，
 
 > 官网：https://docs.gitlab.com/runner/
 
-
-![](/images/利用GitLab实现Hexo博客的CICD/2.png)
+![03a87cc93640da195bf3b11c64d0be5e.png](https://bed.layne666.cn/images/2021/02/12/03a87cc93640da195bf3b11c64d0be5e.png)
 
 # GitLab Runner安装
 
@@ -57,11 +56,11 @@ sudo yum install gitlab-runner
 
 按 Settings -> CI / CD -> Runners 顺序找到`Set up a specific Runner manually`里的注册信息！
 
-![](/images/利用GitLab实现Hexo博客的CICD/3.png)
+![9dceaaf974462886cad53a271c2c42f3.png](https://bed.layne666.cn/images/2021/02/12/9dceaaf974462886cad53a271c2c42f3.png)
 
-![](/images/利用GitLab实现Hexo博客的CICD/4.png)
+![f995b719f9840faf61dd778bc6490387.png](https://bed.layne666.cn/images/2021/02/12/f995b719f9840faf61dd778bc6490387.png)
 
-![](/images/利用GitLab实现Hexo博客的CICD/5.png)
+![fae63538cc83cd19507346757eef373e.png](https://bed.layne666.cn/images/2021/02/12/fae63538cc83cd19507346757eef373e.png)
 
 ```Powershell
 gitlab-runner register
@@ -69,7 +68,7 @@ gitlab-runner register
 
 根据提示内容输入对应的注册信息！如图所示：
 
-![](/images/利用GitLab实现Hexo博客的CICD/6.png)
+![216885c49d095e7b3bd023e070e502f7.png](https://bed.layne666.cn/images/2021/02/12/216885c49d095e7b3bd023e070e502f7.png)
 
 可以查看一下服务是否在运行，如果没有需手动启动！
 
@@ -117,8 +116,7 @@ build:
 
 推送代码后，看对应的`job`任务是否有报错！
 
-![](/images/利用GitLab实现Hexo博客的CICD/7.png)
-
+![b93d3324e9a9453866f2fd03978e78d0.png](https://bed.layne666.cn/images/2021/02/12/b93d3324e9a9453866f2fd03978e78d0.png)
 
 # FAQ
 

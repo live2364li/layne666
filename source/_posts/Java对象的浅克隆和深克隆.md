@@ -1,8 +1,14 @@
 ---
 title: Java对象的浅克隆和深克隆
+copyright_author_href: https://layne666.cn
+cover: https://bed.layne666.cn/images/2021/02/12/c680527ca24cb1f96f33bed11525a237.png
 date: 2019-09-02 16:09:41
-tags: [Java, 克隆]
-categories: Java
+updated: 2019-09-02 16:09:41
+categories: 
+  - Java
+tags: 
+  - Java
+  - 克隆
 ---
 
 ## 引言
@@ -26,7 +32,7 @@ categories: Java
   }
   ```
 
-- 属性是String的情况，String也是一个类，那String引用类型吗？String的表现有的像基本类型，归根到底就是因为`String不可改变`，克隆之后俩个引用指向同一个String，但当修改其中的一个，改的不是String的值，却是新生成一个字符串，让被修改的引用指向新的字符串。外表看起来就像基本类型一样。<!--more-->
+- 属性是String的情况，String也是一个类，那String引用类型吗？String的表现有的像基本类型，归根到底就是因为`String不可改变`，克隆之后俩个引用指向同一个String，但当修改其中的一个，改的不是String的值，却是新生成一个字符串，让被修改的引用指向新的字符串。外表看起来就像基本类型一样。
 
 ## 浅克隆
 

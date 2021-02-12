@@ -1,8 +1,13 @@
 ---
 title: VMware虚拟机 CentOS7下ping不通的问题
+copyright_author_href: https://layne666.cn
+cover: https://bed.layne666.cn/images/2021/02/12/9e873cc073a80183ecbcfa46f4ce85ba.png
 date: 2019-08-25 16:51:49
-tags: CentOS
-categories: CentOS
+updated: 2019-08-25 16:51:49
+categories: 
+  - CentOS
+tags: 
+  - CentOS
 ---
 
 ### 前言
@@ -16,9 +21,9 @@ ping: baidu.com: 未知的名称或服务
 
 ### 解决方法
 
-在 VMware 虚拟机任务栏——编辑（E）——虚拟网络编辑器——VMnet8——查看本机的子网 ip，将其写入 `ifcfg-ens33` 文件里面的 ip 进行修改即可！<!--more-->
+在 VMware 虚拟机任务栏——编辑（E）——虚拟网络编辑器——VMnet8——查看本机的子网 ip，将其写入 `ifcfg-ens33` 文件里面的 ip 进行修改即可！
 
-![](../images/VMware虚拟机-CentOS7下ping不通的问题/1.jpg)
+![9e873cc073a80183ecbcfa46f4ce85ba.png](https://bed.layne666.cn/images/2021/02/12/9e873cc073a80183ecbcfa46f4ce85ba.png)
 
 ### 修改 ifcfg-ens33 文件
 

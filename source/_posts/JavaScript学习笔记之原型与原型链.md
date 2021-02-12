@@ -1,20 +1,25 @@
 ---
 title: JavaScript学习笔记之原型与原型链
-date: '2019-01-31 16:56:10'
-updated: '2019-02-08 17:20:19'
-tags: [JavaScript]
-categories: 前端
+copyright_author_href: https://layne666.cn
+cover: https://bed.layne666.cn/images/2021/02/12/7003e88f5f36ec2e447695ac946df920.png
+date: 2019-01-31 16:56:10
+updated: 2019-02-08 17:20:19
+categories: 
+  - 前端
+tags: 
+  - JavaScript 
 ---
+
 ## 原型
 
 1. 函数的prototype属性(如图)
   * 每个函数都有一个prototype属性, 它默认指向一个Object空对象(即称为: 原型对象)
   * 原型对象中有一个属性constructor, 它指向函数对象
 
-![](../images/JavaScript学习笔记之原型与原型链/1.png) 
+![864a2c36c849c527abd5ae5be1ee725a.png](https://bed.layne666.cn/images/2021/02/12/864a2c36c849c527abd5ae5be1ee725a.png)
 
 2. 给原型对象添加属性(一般都是方法)
-  * 作用: 函数的所有实例对象自动拥有原型中的属性(方法)<!--more-->  
+  * 作用: 函数的所有实例对象自动拥有原型中的属性(方法)
 
 ```JavaScript
 <script type="text/javascript">
@@ -45,7 +50,7 @@ categories: 前端
 3. 对象的隐式原型的值为其对应构造函数的显式原型的值
 4. 内存结构(如图)
 
-![](../images/JavaScript学习笔记之原型与原型链/2.png) 
+![8811515a2fb4e59f39e9db430481af46.png](https://bed.layne666.cn/images/2021/02/12/8811515a2fb4e59f39e9db430481af46.png)
 
 5. 总结:
   * 函数的prototype属性: **在定义函数时自动添加的, 默认值是一个空Object对象**
@@ -78,6 +83,7 @@ categories: 前端
 ```
 
 ## 原型链
+
 1. 原型链(图解)
   * 访问一个对象的属性时，
     * 先在自身属性中查找，找到返回
@@ -86,15 +92,16 @@ categories: 前端
   * 别名: 隐式原型链
   * 作用: **查找对象的属性(方法)**
 
-![](../images/JavaScript学习笔记之原型与原型链/3.png) 
+![232db5152ae1a55bd8f5a7da6ac49f47.png](https://bed.layne666.cn/images/2021/02/12/232db5152ae1a55bd8f5a7da6ac49f47.png) 
 
 2. 构造函数/原型/实体对象的关系(图解)
 
-![](../images/JavaScript学习笔记之原型与原型链/4.png) 
+![ca6364652533a97a7a4a6814cac46b1b.png](https://bed.layne666.cn/images/2021/02/12/ca6364652533a97a7a4a6814cac46b1b.png)
 
 3. 构造函数/原型/实体对象的关系2(图解)
 
-![](../images/JavaScript学习笔记之原型与原型链/5.png) 
+![18ac61fcf1fdd6056bed2ce5711cdb5d.png](https://bed.layne666.cn/images/2021/02/12/18ac61fcf1fdd6056bed2ce5711cdb5d.png)
+ 
 ```JavaScript
 <script type="text/javascript">
   // console.log(Object)
@@ -202,7 +209,5 @@ categories: 前端
   console.log(Object instanceof  Foo); // false
 </script>
 ```
-![](../images/JavaScript学习笔记之原型与原型链/6.png) 
 
-
-
+![7003e88f5f36ec2e447695ac946df920.png](https://bed.layne666.cn/images/2021/02/12/7003e88f5f36ec2e447695ac946df920.png)

@@ -1,15 +1,21 @@
 ---
 title: 动态修改logback的日志级别
+copyright_author_href: https://layne666.cn
+cover: https://bed.layne666.cn/images/2021/02/12/30df62326f6002dee51611a943ffd4d7.png
 date: 2020-07-05 22:32:42
-tags: [Java,Logback]
-categories: Logback
+updated: 2020-07-05 22:32:42
+categories: 
+  - Logback
+tags: 
+  - Java
+  - Logback
 ---
 
 前段时间，威哥曾问我：`线上环境的logback日志级别怎么动态修改？`我：？？？
 
-![](../images/动态修改logback的日志级别/1.jpg)
+![ab63cb144e08bf29bf3017d93f9ef224.jpg](https://bed.layne666.cn/images/2021/02/12/ab63cb144e08bf29bf3017d93f9ef224.jpg)
 
-<img src="https://layne666.cn/images/%E7%BE%8E%E7%90%B4.gif" alt="" data-action="zoom" style="display: inline-block;"> 没了解过呀，不知道咋弄。利用空闲时间研究了下，于是就有了这篇文章！<!--more-->
+<img src="https://bed.layne666.cn/images/2021/02/12/f345dab3d48e1c2ff1fc66729ea3777d.gif" alt="" data-action="zoom" style="display: inline-block;"> 没了解过呀，不知道咋弄。利用空闲时间研究了下，于是就有了这篇文章！
 
 ## logback.xml自动扫描重新加载配置
 
@@ -21,15 +27,15 @@ logback.xml 中的 configuration 标签有 `<configuration scan="true" scanPerio
 
 configuration 标签对应的处理类是`ConfigurationAction`，具体代码如下：
 
-![](../images/动态修改logback的日志级别/2.png)
+![dc9a47d226dd403e8de1f9e735673672.png](https://bed.layne666.cn/images/2021/02/12/dc9a47d226dd403e8de1f9e735673672.png)
 
-![](../images/动态修改logback的日志级别/3.png)
+![d09d75be43b66b37c241377a438959c1.png](https://bed.layne666.cn/images/2021/02/12/d09d75be43b66b37c241377a438959c1.png)
 
 在`ReconfigureOnChangeTask`的`run`方法里，找到监听的文件，然后判断文件有没有，有的话再判断有没有改，这个改是通过最后修改时间判断的。
 
-![](../images/动态修改logback的日志级别/4.png)
+![b0fabc4c00c3d8a46547a8fe0d7cd3bf.png](https://bed.layne666.cn/images/2021/02/12/b0fabc4c00c3d8a46547a8fe0d7cd3bf.png)
 
-![](../images/动态修改logback的日志级别/5.png)
+![18e871c668473089fb2b10aecefa744f.png](https://bed.layne666.cn/images/2021/02/12/18e871c668473089fb2b10aecefa744f.png)
 
 如果修改了的话，则进行重新加载 logback 的配置文件。
 
@@ -41,9 +47,7 @@ configuration 标签对应的处理类是`ConfigurationAction`，具体代码如
   <logger name="com.thunisoft.xhry.controller" level="debug" additivity="false">
   	<appender-ref ref="FILE" />
   </logger>
-  ```
-
-  
+  ``` 
 
 ## 通过接口动态修改项目的日志级别
 
@@ -51,7 +55,7 @@ configuration 标签对应的处理类是`ConfigurationAction`，具体代码如
 
 实现流程如下：
 
-![](../images/动态修改logback的日志级别/6.png)
+![30df62326f6002dee51611a943ffd4d7.png](https://bed.layne666.cn/images/2021/02/12/30df62326f6002dee51611a943ffd4d7.png)
 
 具体代码如下：
 
@@ -94,11 +98,11 @@ public String changeLevel(String rootLevel, String singleLevel, String singlePat
 
 默认`A6`项目生成的时候，已经对`Actuator`的所有`ednpoints`放开了，包含 loggers（显示和修改配置的 loggers ）。
 
-![](../images/动态修改logback的日志级别/7.png)
+![07873bbc2a6e9eb380fa35a5dfd33de7.png](https://bed.layne666.cn/images/2021/02/12/07873bbc2a6e9eb380fa35a5dfd33de7.png)
 
 这时候，我们启动完项目之后，访问`http://ip:port/context-path/actuator/loggers`就可以看到当前项目所有包/类的日志输出级别了。
 
-![](../images/动态修改logback的日志级别/8.png)
+![20434acf39bb446c897731d934509178.png](https://bed.layne666.cn/images/2021/02/12/20434acf39bb446c897731d934509178.png)
 
 如果我们想要查看单个`logger`的日志配置信息，可以访问如下格式的地址：
 
@@ -106,25 +110,25 @@ public String changeLevel(String rootLevel, String singleLevel, String singlePat
 http://ip:port/context-path/actuator/loggers/{name}
 ```
 
-![](../images/动态修改logback的日志级别/9.png)
+![5c9232bb2021cdccf929f486ae83449b.png](https://bed.layne666.cn/images/2021/02/12/5c9232bb2021cdccf929f486ae83449b.png)
 
 loggers endpoint 同时提供了在应用运行时改变日志级别的能力，比如你想要改变包/类的 logger 等级为 debug，可以发送一个`POST`请求，如下所示：
 
-![](../images/动态修改logback的日志级别/10.png)
+![b58a5d4b64f5186efbbf95cf05298c57.png](https://bed.layne666.cn/images/2021/02/12/b58a5d4b64f5186efbbf95cf05298c57.png)
 
 再次访问后，发现返回，配置的日志级别为`debug`，生效级别也为`debug`，说明修改成功了！
 
-![](../images/动态修改logback的日志级别/11.png)
+![beda872e7679d738a4016aa9aa7abe55.png](https://bed.layne666.cn/images/2021/02/12/beda872e7679d738a4016aa9aa7abe55.png)
 
 ### 源码解析
 
 org.springframework.boot.actuate.logging.LoggersEndpoint 类提供两个`readOperation`和一个`writeOperation`，分别用来读取和更改 logger 的 level。比如更改 logger 的 level 时，源码如下：
 
-![](../images/动态修改logback的日志级别/12.png)
+![4ef58ff8bea166ccc89641d7104d1bbc.png](https://bed.layne666.cn/images/2021/02/12/4ef58ff8bea166ccc89641d7104d1bbc.png)
 
 最终还是调用 org.springframework.boot.logging.logback.LogbackLoggingSystem 的`setLogLevel`方法，其实和第二种实现效果一样！
 
-![](../images/动态修改logback的日志级别/13.png)
+![fc54366bbac62e81fa1fa9c2912a9df7.png](https://bed.layne666.cn/images/2021/02/12/fc54366bbac62e81fa1fa9c2912a9df7.png)
 
 ## 总结
 

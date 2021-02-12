@@ -1,15 +1,20 @@
 ---
 title: Git Push 常见用法整理
+copyright_author_href: https://layne666.cn
+cover: https://bed.layne666.cn/images/2021/02/12/75f3d4eaca35c7d0c92fd86f9275ec22.webp
 date: 2019-08-13 23:35:37
-tags: [Git]
-categories: Git
+updated: 2019-08-13 23:35:37
+categories: 
+  - Git
+tags: 
+  - Git
 ---
 
 git push的一般形式为 git push <远程主机名> <本地分支名>:<远程分支名> 
 
 例如 `git push origin master:master` ，即是将本地的 master 分支推送到远程主机 origin 上的对应 master 分支， origin 是远程主机名，
 
-第一个 master 是本地分支名，第二个 master 是远程分支名。<!--more-->
+第一个 master 是本地分支名，第二个 master 是远程分支名。
 
 ## git push origin master
 

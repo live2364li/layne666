@@ -1,15 +1,20 @@
 ---
 title: 如何解决Maven jar包冲突
+copyright_author_href: https://layne666.cn
+cover: https://bed.layne666.cn/images/2021/02/12/cf7712756320e0c0943c95847206515c.png
 date: 2019-08-20 19:56:58
-tags: [Maven]
-categories: Maven
+updated: 2019-08-20 19:56:58
+categories: 
+  - Maven
+tags: 
+  - Maven
 ---
 
 ## 依赖传递
 
 假设我们现在有一个多模块项目，依赖关系如图，我们在 st-web 模块中引入st-dal依赖时，st-common-lib 这个依赖也会被我们引入，这个就是`依赖传递`，下表中列出了 scope 在依赖过程中发生的变化，列标题为被依赖的模块的 `scope`
 
-![](../images/如何解决Maven-jar包冲突/1.jpg)<!--more-->
+![cf7712756320e0c0943c95847206515c.png](https://bed.layne666.cn/images/2021/02/12/cf7712756320e0c0943c95847206515c.png)
 
 |          | **compile** | **test** | **provided** | **runtime** |
 | -------- | ----------- | -------- | ------------ | ----------- |
@@ -28,7 +33,7 @@ categories: Maven
 
 答案是1.1这个版本，st-web 到 st-common-lib(1.1) 的距离为1，st-web 到 st-common-lib(1.0) 的距离为2，选择距离短的，即`最短路径原则`
 
-![](../images/如何解决Maven-jar包冲突/2.jpg)
+![e524a193a831965eeaa75d581d43aa1c.jpg](https://bed.layne666.cn/images/2021/02/12/e524a193a831965eeaa75d581d43aa1c.jpg)
 
 如何看依赖的距离关系呢？前文说过，执行如下命令打印出全局的依赖树，层级关系特别清楚
 
@@ -40,7 +45,7 @@ mvn dependency:tree > show.txt
 
 项目依赖如图，路径一样，会选用 st-common-lib 的哪个版本呢？这就得看你在 pom 文件中先声明是哪个依赖，如果在 pom.xml 中，st-remote-invoker 写在前面，就会用1.0这个版本，如果 st-dal 写在前面，则会用1.1这个版本
 
-![](../images/如何解决Maven-jar包冲突/3.jpg)
+![1117c1bd6ff51a2116fd62ea6bcf5b77.jpg](https://bed.layne666.cn/images/2021/02/12/1117c1bd6ff51a2116fd62ea6bcf5b77.jpg)
 
 ## 依赖排除
 

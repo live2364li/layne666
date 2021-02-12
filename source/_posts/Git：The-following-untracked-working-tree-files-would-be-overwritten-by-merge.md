@@ -1,10 +1,15 @@
 ---
 title: Git：The following untracked working tree files would be overwritten by merge
-date: '2019-02-19 10:40:48'
-updated: '2019-02-19 10:43:27'
-tags: [Git]
-categories: Git
+copyright_author_href: https://layne666.cn
+cover: https://bed.layne666.cn/images/2021/02/12/75f3d4eaca35c7d0c92fd86f9275ec22.webp
+date: 2019-02-19 10:40:48
+updated: 2019-02-19 10:43:27
+categories: 
+  - Git
+tags: 
+  - Git
 ---
+
 ## 问题
 
 ```bash
@@ -16,7 +21,7 @@ The following untracked working tree files would be overwritten by merge
 ```bash
 git clean -d -fx
 ```
-<!--more-->
+
 ## 延伸阅读
 
 ```bash
