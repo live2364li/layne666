@@ -4,8 +4,8 @@ id: 84
 date: 2014-02-10 14:49:01
 ---
 
-**有什么话要对我说吗？这里是你畅所欲言的地方，可以咨询，可以交流，可以感叹，可以发飙，但不可以订外卖。**
+**既然来都来了，不准备留下点什么吗？🖊**
 
 <p style="text-align:center">
-	<img src="/images/message.jpg"/>
+	<img src="https://bed.layne666.cn/images/2021/02/12/0e5d33720495159e7938e572ffaba896.jpg" height="500px"/>
 </p>

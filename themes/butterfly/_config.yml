@@ -18,7 +18,7 @@ menu:
 #    - 电影 || /movies/ || fas fa-video
   友情链接: /friends/ || fas fa-link
   留言板: /message/ || fas fa-comment-dots
-  关于: /about/ || fas fa-heart
+  #关于: /about/ || fas fa-heart
   更多||fas fa-list:
     - Github || https://github.com/Layne666 || fab fa-github
     - 我的网盘 || https://download.layne666.cn || fas fa-download
