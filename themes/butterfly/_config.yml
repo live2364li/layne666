@@ -22,7 +22,7 @@ menu:
   更多||fas fa-list:
     - Github || https://github.com/Layne666 || fab fa-github
     - 我的网盘 || https://download.layne666.cn || fas fa-download
-    - 我的图库 || https://bed.layne666.cn || fas fas fa-images
+    - 我的图床 || https://bed.layne666.cn || fas fas fa-images
     - iHopess || https://ihopess.layne666.cn || fas fa-book
     - Bilibili || https://space.bilibili.com/14775858 || fas fa-play-circle
 
@@ -52,7 +52,7 @@ copy:
 social:
   fab fa-github: https://github.com/Layne666 || Github
   fas fa-download: https://download.layne666.cn || 我的网盘
-  fas fas fa-images: https://bed.layne666.cn || 我的图库
+  fas fas fa-images: https://bed.layne666.cn || 我的图床
   fas fa-book: https://ihopess.layne666.cn || iHopess
   fas fa-play-circle: https://space.bilibili.com/14775858 || Bilibili
 
