@@ -4,6 +4,7 @@ id: 933
 date: 2014-06-19 01:53:52
 type: "about"
 comments: false
+aside: false
 ---
 
 **滴滴滴！！！**
