@@ -22,7 +22,7 @@ tags:
 
 ## API 接口上传文件
 
-> OneIndex 支持 API 接口上传文件后，用 Typora + PicGo 写作也太舒服了吧！
+> OneIndex 支持 API 接口上传文件后，用 Typora + PicGo 写作也太舒服了吧！🎉🎉
 
 * 接口地址：/api/v1/upload
 * POST参数名：file
