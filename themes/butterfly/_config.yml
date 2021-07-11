@@ -21,7 +21,7 @@ menu:
   #关于: /about/ || fas fa-heart
   更多||fas fa-list:
     - Github || https://github.com/Layne666 || fab fa-github
-    - 我的网盘 || https://download.layne666.cn || fas fa-download
+    - 我的网盘 || https://pan.layne666.cn || fas fa-download
     - 我的图床 || https://bed.layne666.cn || fas fas fa-images
     - iHopess || https://ihopess.layne666.cn || fas fa-book
     - Bilibili || https://space.bilibili.com/14775858 || fas fa-play-circle
