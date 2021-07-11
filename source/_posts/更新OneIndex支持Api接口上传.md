@@ -27,7 +27,7 @@ tags:
 * 接口地址：/api/v1/upload
 * POST参数名：file
 * 请求头：{"authcode":"xxxxxx"}
-  * authcode：对应OneIndex图床配置的授权码
+  * authcode：对应 `OneIndex` 图床配置的授权码
 
 ![image-20210630234829890](https://pan.layne666.cn/images/2021/07/11/5XHmj2vQtF.png)
 
