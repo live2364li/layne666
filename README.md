@@ -9,5 +9,5 @@
 
 ------------------------------
 
-> My lovely blog, the theme styles are modified and added based on [Hexo-theme-sagiri](https://github.com/DIYgod/hexo-theme-sagiri)
+> 🍰 This is my lovely blog，based on [hexo-theme-butterfly](https://github.com/jerryc127/hexo-theme-butterfly)
 
