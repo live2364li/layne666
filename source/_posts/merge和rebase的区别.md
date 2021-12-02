@@ -1,7 +1,7 @@
 ---
 title: merge和rebase的区别
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/deaf651b332e3ea9b9c06a4111a6235a.png
+cover: https://pan.layne666.cn/images/2021/12/02/mtfhJZgxkj.png
 date: 2019-03-13 23:00:13
 updated: 2019-03-13 23:00:13
 categories: 
@@ -18,7 +18,7 @@ Git 上合并代码有 `git merge` 以及 `git rebase` 两种方式。下面将�
 
 现在在 develop 开发分支上，然后你创建了一个 feature 分支开发新功能，现在团队中另一个成员在 develop 分支上添加了新的提交。如下图所示：
 
-![deaf651b332e3ea9b9c06a4111a6235a.png](https://bed.layne666.cn/images/2021/02/12/deaf651b332e3ea9b9c06a4111a6235a.png)
+![](https://pan.layne666.cn/images/2021/12/02/1qqZhD11WW.png)
 
 现在，如果 develop 中新的提交和你的工作是相关的。为了将新的提交并入你的分支，你有两个选择：merge 或 rebase。
 
@@ -37,7 +37,7 @@ git merge develop feature
 
 feature 分支中新的合并提交 (merge commit) 将两个分支的历史连在了一起。你会得到下面这样的分支结构：
 
-![1f0a8f949d0e306dc9de326309b322d5.png](https://bed.layne666.cn/images/2021/02/12/1f0a8f949d0e306dc9de326309b322d5.png)
+![](https://pan.layne666.cn/images/2021/12/02/w88smkL1Nn.png)
 
 merge 特点
 1. 自动创建一个新的 commit
@@ -65,7 +65,7 @@ git merge --no-ff develop
 
 来一张分解图示例：
 
-![fc04258e8ae5bc9c8e1e8c7e66611b7b.png](https://bed.layne666.cn/images/2021/02/12/fc04258e8ae5bc9c8e1e8c7e66611b7b.png)
+![](https://pan.layne666.cn/images/2021/12/02/ron492R7SX.png)
 
 ## rebase
 
@@ -79,7 +79,7 @@ git checkout feature
 git rebase develop
 ```
 
-![6730d9be994cf6d67b84157a7f55fe09.png](https://bed.layne666.cn/images/2021/02/12/6730d9be994cf6d67b84157a7f55fe09.png)
+![](https://pan.layne666.cn/images/2021/12/02/bI9ouZljBY.png)
 
 它会把整个 feature 分支移动到 develop 分支的后面，有效地把所有 develop 分支上新的提交并入过来。但是，rebase 为原分支上每一个提交创建一个新的提交，重写了项目历史，并且不会带来合并提交。
 
@@ -108,7 +108,7 @@ never use it on public branches(不要在公共分支上使用)
 
 比如说，如果你在 develop 分支上，rebase 到你的 feature 分支上会发生什么？
 
-![0ef536657346e3aa2d7c42b86c45ec10.png](https://bed.layne666.cn/images/2021/02/12/0ef536657346e3aa2d7c42b86c45ec10.png)
+![](https://pan.layne666.cn/images/2021/12/02/pg8NUrCJdR.png)
 
 rebase 将所有 develop 的 commit 移动到你的 feature 的顶端。问题是：其他人还在 develop 上开发，由于你使用了rebase 移动了 develop，git 会认为你的主分支的历史与其他人的有分歧，会产生冲突。
 

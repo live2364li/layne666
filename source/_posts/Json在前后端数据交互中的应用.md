@@ -1,7 +1,7 @@
 ---
 title: JSON在前后端数据交互中的应用
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/fd25db7280f6b6b17de37ae725bd9f9e.png
+cover: https://pan.layne666.cn/images/2021/12/02/HyvBNKKCIa.png
 date: 2019-01-25 00:43:20
 updated: 2019-02-08 17:20:13
 categories: 
@@ -312,7 +312,7 @@ JSON.stringify(xiaoming); // '{"Name":"小明","Age":14}'
 
 * HttpMessageConverter
 
-![fd25db7280f6b6b17de37ae725bd9f9e.png](https://bed.layne666.cn/images/2021/02/12/fd25db7280f6b6b17de37ae725bd9f9e.png)
+![](https://pan.layne666.cn/images/2021/12/02/YCFOU1taK5.png)
 
 
 * jackson包

@@ -10,7 +10,7 @@ aside: false
    <div id="maincontent">
       <form>
        <div class="formmain">
-        <img src="https://bed.layne666.cn/images/2021/02/12/0e5d33720495159e7938e572ffaba896.jpg" height="400px" />
+        <img src="https://pan.layne666.cn/images/2021/12/02/wkt9HcLQwv.jpg" height="400px" />
         <div style="padding: 5px 20px;">
          <center>
           <h3 calss="title3">来自 <a href="https://layne666.cn" target="_blank">Layne666</a> 的留言</h3>

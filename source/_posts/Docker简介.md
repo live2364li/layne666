@@ -1,7 +1,7 @@
 ---
 title: Docker简介
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/0b521c314ea28625e1695e6d6d8e014f.jpg
+cover: https://pan.layne666.cn/images/2021/12/02/H80H44CU5H.jpg
 date: 2019-01-06 14:36:11
 updated: 2019-02-08 17:19:32
 categories: 
@@ -28,7 +28,7 @@ Docker是基于Go语言实现的云开源项目。
 
 Docker的主要目标是“***Build，Ship and Run Any App,Anywhere***”，也就是通过对应用组件的封装、分发、部署、运行等生命周期的管理，使用户的APP（可以是一个WEB应用或数据库应用等等）及其运行环境能够做到“`一次封装，到处运行`”。
 
-![88bba7c9b93843de470ce830c8b2d1c2.jpg](https://bed.layne666.cn/images/2021/02/12/88bba7c9b93843de470ce830c8b2d1c2.jpg)
+![](https://pan.layne666.cn/images/2021/12/02/zbeuDQYPUk.jpg)
 
 Linux 容器技术的出现就解决了这样一个问题，而 Docker 就是在它的基础上发展过来的。将应用运行在 Docker 容器上面，而 Docker 容器在任何操作系统上都是一致的，这就实现了跨平台、跨服务器。只需要一次配置好环境，换到别的机子上就可以一键部署好，大大简化了操作。
 
@@ -40,7 +40,7 @@ Linux 容器技术的出现就解决了这样一个问题，而 Docker 就是在
 
 它可以在一种操作系统里面运行另一种操作系统，比如在Windows 系统里面运行Linux 系统。应用程序对此毫无感知，因为虚拟机看上去跟真实系统一模一样，而对于底层系统来说，虚拟机就是一个普通文件，不需要了就删掉，对其他部分毫无影响。这类虚拟机完美的运行了另一套系统，能够使应用程序，操作系统和硬件三者之间的逻辑不变。
 
-![00c80f9b0b22ba39c8325fa943a8568a.png](https://bed.layne666.cn/images/2021/02/12/00c80f9b0b22ba39c8325fa943a8568a.png)
+![](https://pan.layne666.cn/images/2021/12/02/aw3GjtHLKi.png)
 
 虚拟机的缺点：
 
@@ -56,7 +56,7 @@ Linux 容器技术的出现就解决了这样一个问题，而 Docker 就是在
 
 **容器与虚拟机不同，不需要捆绑一整套操作系统，只需要软件工作所需的库资源和设置**。系统因此而变得高效轻量并保证部署在任何环境中的软件都能始终如一地运行。
 
-![1b9e12ee6bfd1453a4cb7898c0823427.png](https://bed.layne666.cn/images/2021/02/12/1b9e12ee6bfd1453a4cb7898c0823427.png)
+![](https://pan.layne666.cn/images/2021/12/02/YIFTf3EOci.png)
 
 ## Docker和传统虚拟化方式的不同之处
 

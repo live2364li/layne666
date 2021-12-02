@@ -1,7 +1,7 @@
 ---
 title: Java设计模式之六大原则
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/12710de638f991f87615fbccdf0faf16.jpg
+cover: https://pan.layne666.cn/images/2021/12/02/pK6CYxwifo.jpg
 date: 2019-09-10 09:55:16
 updated: 2019-09-10 09:55:16
 categories: 

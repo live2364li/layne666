@@ -1,7 +1,7 @@
 ---
 title: Win10搭建Vagrant+VirtualBox环境
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/286b3ad48f45bfe13a465f834004e163.png
+cover: https://pan.layne666.cn/images/2021/12/02/JNwWGlF4qt.png
 date: 2019-07-25 12:44:13
 updated: 2019-07-25 12:44:13
 categories: 
@@ -112,9 +112,9 @@ ssh: 127.0.0.1
 
 这里使用 Xshell 来登录
 
-![286b3ad48f45bfe13a465f834004e163.png](https://bed.layne666.cn/images/2021/02/12/286b3ad48f45bfe13a465f834004e163.png)
+![](https://pan.layne666.cn/images/2021/12/02/kPUG4bfM7x.png)
 
-![710143cbd85429e89af39e98276757a5.png](https://bed.layne666.cn/images/2021/02/12/710143cbd85429e89af39e98276757a5.png)
+![](https://pan.layne666.cn/images/2021/12/02/m4ua2kmHZl.png)
 
 找到刚刚上面生成的秘钥: 
 

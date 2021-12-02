@@ -1,7 +1,7 @@
 ---
 title: Java设计模式之单例模式
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/7d29bfc50c87cfc06c4e8c13c0afb6fb.webp
+cover: https://pan.layne666.cn/images/2021/12/02/Tjslzo1Pzz.jpg
 date: 2019-09-17 19:17:24
 updated: 2019-09-17 19:17:24
 categories: 

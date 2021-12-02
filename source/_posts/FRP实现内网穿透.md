@@ -1,7 +1,7 @@
 ---
 title: FRP实现内网穿透
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/8511d8d61d223c08494404214961bddd.png
+cover: https://pan.layne666.cn/images/2021/12/02/JP3qDyXWDO.png
 date: 2020-02-08 23:10:08
 updated: 2020-02-08 23:10:08
 categories: 

@@ -1,7 +1,7 @@
 ---
 title: 导出任何对象集合的数据到Excel（通用版工具类）
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/ddd2be2ecdb2ad293b82c3d30b2b0623.png
+cover: https://pan.layne666.cn/images/2021/12/02/F4ArtVrus6.png
 date: 2019-03-07 01:51:19
 updated: 2019-03-07 01:57:28
 categories: 
@@ -212,8 +212,8 @@ public class ExcelUtils {
 
 ## 测试结果
 
-![c22f5693162b9819a467ca8ee7c9ef9a.png](https://bed.layne666.cn/images/2021/02/12/c22f5693162b9819a467ca8ee7c9ef9a.png)
+![](https://pan.layne666.cn/images/2021/12/02/YCV0kjjEqz.png)
 
-![ddd2be2ecdb2ad293b82c3d30b2b0623.png](https://bed.layne666.cn/images/2021/02/12/ddd2be2ecdb2ad293b82c3d30b2b0623.png)
+![](https://pan.layne666.cn/images/2021/12/02/X2ssxou9oU.png)
 
-![c5938bf809be58115e96b31477a2ddce.png](https://bed.layne666.cn/images/2021/02/12/c5938bf809be58115e96b31477a2ddce.png)
+![](https://pan.layne666.cn/images/2021/12/02/NZyufHaB8N.png)
