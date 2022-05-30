@@ -1,7 +1,7 @@
 ---
 title: Lombok常用注解
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/737dfc33bb084f652c63cab03d1378e1.jpg
+cover: https://pan.layne666.cn/images/2021/12/02/hcMqrxDIYX.jpg
 date: 2019-04-04 14:50:20
 updated: 2019-04-04 14:50:20
 categories: 

@@ -1,7 +1,7 @@
 ---
 title: img标签访问图片返回403 forbidden问题
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/ebac918b385d1a9dd9d137a536039472.png
+cover: https://pan.layne666.cn/images/2021/12/02/9oa8ZVNEy3.png
 date: 2019-04-25 20:49:46
 updated: 2019-04-25 20:49:46
 categories: 
@@ -15,7 +15,7 @@ tags:
 `<meta name="referrer" content="no-referrer" />`
 
 referrer的几种状态
-![ebac918b385d1a9dd9d137a536039472.png](https://bed.layne666.cn/images/2021/02/12/ebac918b385d1a9dd9d137a536039472.png)
+![](https://pan.layne666.cn/images/2021/12/02/u7dE3UToEO.png)
 
 a标签的referrer
 

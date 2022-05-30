@@ -1,7 +1,7 @@
 ---
 title: 常用Git命令清单
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/a181981460c53242260bc0456e178eab.png
+cover: https://pan.layne666.cn/images/2021/12/02/NI3kl2l4bC.png
 date: 2019-06-30 04:28:22
 updated: 2019-06-30 04:28:22
 categories: 
@@ -14,7 +14,7 @@ tags:
 
 一般来说，日常使用只要记住下图6个命令，就可以了。但是熟练使用，恐怕要记住60～100个命令。
 
-![a181981460c53242260bc0456e178eab.png](https://bed.layne666.cn/images/2021/02/12/a181981460c53242260bc0456e178eab.png)
+![](https://pan.layne666.cn/images/2021/12/02/riHDOUNIeD.png)
 
 下面是我整理的常用 Git 命令清单。几个专用名词的译名如下:
 ```shell

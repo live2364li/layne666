@@ -1,7 +1,7 @@
 ---
 title: Solo成功从v2.9.9升级到v3.0.0
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/fb1d9ba416d90bc706c4133dcf02b98d.jpg
+cover: https://pan.layne666.cn/images/2021/12/02/vAMDemNZ2e.jpg
 date: 2019-02-27 21:39:52
 updated: 2019-02-27 21:41:06
 categories: 
@@ -19,7 +19,7 @@ tags:
 
 <img src="https://raw.githubusercontent.com/Molunerfinn/test/master/picgo/picgo-2.0.gif" alt="" style="max-width:100%;">
 
-![94fd13a2e5bd1fb9bb1ff6d7537367a3.png](https://bed.layne666.cn/images/2021/02/12/94fd13a2e5bd1fb9bb1ff6d7537367a3.png)
+![](https://pan.layne666.cn/images/2021/12/02/xiYQriswpA.png)
 
 ---
 

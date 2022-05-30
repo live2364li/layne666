@@ -1,7 +1,7 @@
 ---
 title: IDEA常用插件
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/150a58d57fce5497436cbd519ac2f08f.jpg
+cover: https://pan.layne666.cn/images/2021/12/02/OcTRuDVD3y.jpg
 date: 2019-02-25 00:59:32
 updated: 2019-02-25 16:16:26
 categories: 

@@ -1,7 +1,7 @@
 ---
 title: Linux常用命令
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/e37d10af5a31d393f59dc32c7c73d633.jpg
+cover: https://pan.layne666.cn/images/2021/12/02/FapvLcUyzB.jpg
 date: 2019-01-08 22:35:06
 updated: 2019-02-08 17:19:46
 categories: 
@@ -68,7 +68,7 @@ userdel -r layne
 id layne           查看layne这个用户信息
 ```
 
-![236e346699b22f6103c4b8c0676c5874.png](https://bed.layne666.cn/images/2021/02/12/236e346699b22f6103c4b8c0676c5874.png)
+![](https://pan.layne666.cn/images/2021/12/02/p76o820ynU.png)
 
 **细节说明**
 

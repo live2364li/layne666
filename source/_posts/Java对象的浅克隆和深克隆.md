@@ -1,7 +1,7 @@
 ---
 title: Java对象的浅克隆和深克隆
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/c680527ca24cb1f96f33bed11525a237.png
+cover: https://pan.layne666.cn/images/2021/12/02/Zgnf5gLfaO.png
 date: 2019-09-02 16:09:41
 updated: 2019-09-02 16:09:41
 categories: 

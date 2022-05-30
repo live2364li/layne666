@@ -1,7 +1,7 @@
 ---
 title: JavaScript学习笔记之原型与原型链
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/7003e88f5f36ec2e447695ac946df920.png
+cover: https://pan.layne666.cn/images/2021/12/02/QBV8sewcSq.png
 date: 2019-01-31 16:56:10
 updated: 2019-02-08 17:20:19
 categories: 
@@ -16,7 +16,7 @@ tags:
   * 每个函数都有一个prototype属性, 它默认指向一个Object空对象(即称为: 原型对象)
   * 原型对象中有一个属性constructor, 它指向函数对象
 
-![864a2c36c849c527abd5ae5be1ee725a.png](https://bed.layne666.cn/images/2021/02/12/864a2c36c849c527abd5ae5be1ee725a.png)
+![](https://pan.layne666.cn/images/2021/12/02/9CR8HPSedb.png)
 
 2. 给原型对象添加属性(一般都是方法)
   * 作用: 函数的所有实例对象自动拥有原型中的属性(方法)
@@ -50,7 +50,7 @@ tags:
 3. 对象的隐式原型的值为其对应构造函数的显式原型的值
 4. 内存结构(如图)
 
-![8811515a2fb4e59f39e9db430481af46.png](https://bed.layne666.cn/images/2021/02/12/8811515a2fb4e59f39e9db430481af46.png)
+![](https://pan.layne666.cn/images/2021/12/02/jsuZwta72r.png)
 
 5. 总结:
   * 函数的prototype属性: **在定义函数时自动添加的, 默认值是一个空Object对象**
@@ -92,15 +92,15 @@ tags:
   * 别名: 隐式原型链
   * 作用: **查找对象的属性(方法)**
 
-![232db5152ae1a55bd8f5a7da6ac49f47.png](https://bed.layne666.cn/images/2021/02/12/232db5152ae1a55bd8f5a7da6ac49f47.png) 
+![](https://pan.layne666.cn/images/2021/12/02/INoXaiNP6y.png)
 
 2. 构造函数/原型/实体对象的关系(图解)
 
-![ca6364652533a97a7a4a6814cac46b1b.png](https://bed.layne666.cn/images/2021/02/12/ca6364652533a97a7a4a6814cac46b1b.png)
+![](https://pan.layne666.cn/images/2021/12/02/KpXp5GYNK1.png)
 
 3. 构造函数/原型/实体对象的关系2(图解)
 
-![18ac61fcf1fdd6056bed2ce5711cdb5d.png](https://bed.layne666.cn/images/2021/02/12/18ac61fcf1fdd6056bed2ce5711cdb5d.png)
+![](https://pan.layne666.cn/images/2021/12/02/1netlHiyNa.png)
  
 ```JavaScript
 <script type="text/javascript">
@@ -210,4 +210,4 @@ tags:
 </script>
 ```
 
-![7003e88f5f36ec2e447695ac946df920.png](https://bed.layne666.cn/images/2021/02/12/7003e88f5f36ec2e447695ac946df920.png)
+![](https://pan.layne666.cn/images/2021/12/02/bIABgZswNH.png)

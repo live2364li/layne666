@@ -1,7 +1,7 @@
 ---
 title: Git Push 常见用法整理
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/75f3d4eaca35c7d0c92fd86f9275ec22.webp
+cover: https://pan.layne666.cn/images/2021/12/02/Wo7t82uset.jpg
 date: 2019-08-13 23:35:37
 updated: 2019-08-13 23:35:37
 categories: 

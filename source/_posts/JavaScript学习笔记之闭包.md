@@ -1,7 +1,7 @@
 ---
 title: JavaScript学习笔记之闭包
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/6093fc259dcf94a2d1f098ac88e1fceb.webp
+cover: https://pan.layne666.cn/images/2021/12/02/hlgWPeSNQl.jpg
 date: 2019-02-07 23:50:29
 updated: 2019-02-08 17:20:30
 categories: 

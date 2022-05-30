@@ -1,7 +1,7 @@
 ---
 title: 解决Hexo的command not found问题
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/c009ee63c6ee043515a3d8e2deceeeaf.jpg
+cover: https://pan.layne666.cn/images/2021/12/02/eseiUBRVRm.jpg
 date: 2020-04-05 10:10:01
 updated: 2020-04-05 10:10:01
 categories: 

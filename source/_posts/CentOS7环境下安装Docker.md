@@ -1,7 +1,7 @@
 ---
 title: CentOS7环境下安装Docker
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/0b521c314ea28625e1695e6d6d8e014f.jpg
+cover: https://pan.layne666.cn/images/2021/12/02/1S20LO6vQb.jpg
 date: 2019-08-21 00:40:08
 updated: 2019-08-21 00:40:08
 categories: 

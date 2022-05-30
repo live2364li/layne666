@@ -1,7 +1,7 @@
 ---
 title: Java基础（多态、抽象类以及接口）
 copyright_author_href: https://layne666.cn
-cover: https://bed.layne666.cn/images/2021/02/12/89db243c90053e1a4c0b19b59e932314.webp
+cover: https://pan.layne666.cn/images/2021/12/02/MNoiSfKsq7.jpg
 date: 2019-01-20 21:52:08
 updated: 2019-02-08 17:20:07
 categories: 
