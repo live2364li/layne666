@@ -141,23 +141,20 @@ live2d:
     # electric_clock
 # see https://akilar.top/posts/4e39cf4a/
 
-electric_clock:
+  #自动推送5个小格
+  # hexo-butterfly-swiper
+# see https://akilar.top/posts/8e1264d1/
+swiper:
   enable: true # 开关
-  priority: 8 #过滤器优先权
+  priority: 5 #过滤器优先权
   enable_page: all # 应用页面
-  exclude:
-    # - /posts/
-    # - /about/
+  timemode: date #date/updated
   layout: # 挂载容器类型
-    type: class
-    name: sticky_layout
+    type: id
+    name: recent-posts
     index: 0
-  loading: https://cdn.cbd.int/hexo-butterfly-clock/lib/loading.gif #加载动画自定义
-  # clock_css: https://cdn.cbd.int/anzhiyu-blog@latest/css/clock.min.css
-  clock_css: /css/clock.min.css
-  clock_js: /js/clock.js
-  # clock_js: https://cdn.cbd.int/anzhiyu-blog/js/clock.min.js
-  # clock_js: https://cdn.cbd.int/hexo-butterfly-clock/lib/clock.min.js
-  ip_api: https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0
-  # ip_api: https://pv.sohu.com/cityjson?ie=utf-8
-  # ip_api: https://restapi.amap.com/v3/ip?key=e2b04289e870b005374ee030148d64fd&s=rsv3
+  default_descr: 再怎么看我也不知道怎么描述它的啦！
+  swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
+  swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
+  custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
+  custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
