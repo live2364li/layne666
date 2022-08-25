@@ -15,11 +15,11 @@ menu:
   留言板: /message/ || fas fa-comment-dots
   #关于: /about/ || fas fa-heart
   更多||fas fa-list:
-    - Github || https://github.com/Layne666 || fab fa-github
+    - Github || https://github.com/live2364li/layne666.cn || fab fa-github
     - 我的网盘 || https://pan.layne666.cn || fas fa-download
     - 我的图床 || https://bed.layne666.cn || fas fas fa-images
     - iHopess || https://ihopess.layne666.cn || fas fa-book
-    - Bilibili || https://space.bilibili.com/14775858 || fas fa-play-circle
+    - Bilibili || https://space.bilibili.com/1189511726?spm_id_from=..0.0 || fas fa-play-circle
 
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
@@ -45,7 +45,7 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  fab fa-github: https://github.com/Layne666 || Github
+  fab fa-github: https://github.com/live2364li/layne666.cn || Github
   fas fa-download: https://download.layne666.cn || 我的网盘
   fas fas fa-images: https://bed.layne666.cn || 我的图床
   fas fa-book: https://ihopess.layne666.cn || iHopess
@@ -97,10 +97,10 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://pan.layne666.cn/images/2021/12/02/cUz2kPU3ih.jpg
+index_img: https://raw.githubusercontent.com/live2364li/picb/main/11.jpg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://pan.layne666.cn/images/2021/12/02/Cs1b8aE4wm.jpg
+default_top_img: https://raw.githubusercontent.com/live2364li/picb/main/0.jpg
 
 # The banner image of archive page
 archive_img:
