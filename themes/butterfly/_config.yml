@@ -105,11 +105,11 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /images/favicon.png
+favicon: https://img2.woyaogexing.com/2022/07/30/b64739170ae11532!400x400.jpg    
 
 # Avatar (頭像)
 avatar:
-  img: /images/avatar.png
+  img: https://img2.woyaogexing.com/2022/07/30/dc43a017cd784a26!400x400.jpg       # xxxxxxxxx
   effect: false
 
 # Disable all banner image
