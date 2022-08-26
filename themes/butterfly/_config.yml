@@ -1,5 +1,21 @@
 # Main menu navigation (導航目錄)
-
+  # see https://anzhiy.cn/posts/fc18.html
+  electric_clock:
+    enable: true # 开关
+    priority: 5 #过滤器优先权
+    enable_page: all # 应用页面
+    exclude:
+      # - /posts/
+      # - /about/
+    layout: # 挂载容器类型
+      type: class
+      name: sticky_layout
+      index: 0
+    loading: https://cdn.cbd.int/hexo-butterfly-clock-pro/lib/loading.gif #加载动画自定义
+    clock_css: https://cdn.cbd.int/hexo-butterfly-clock-pro/lib/clock.min.css
+    clock_js: https://cdn.cbd.int/hexo-butterfly-clock-pro/lib/clock.min.js
+    ip_api: https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0
+## Docs: https://hexo.io/docs/configuration.html
 
 menu:
   首页: / || fas fa-home
