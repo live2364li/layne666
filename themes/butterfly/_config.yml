@@ -907,6 +907,7 @@ inject:
     - <script defer src="/js/universe.js"></script>
         # 樱花飘落效果
     - <script async src="https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js"></script>
+    - <script src="/js/sun_moon.js" async></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
