@@ -1,5 +1,5 @@
-
 # Main menu navigation (導航目錄)
+
 
 menu:
   首页: / || fas fa-home
@@ -213,7 +213,6 @@ post_copyright:
 # Sponsor/reward
 reward:
   enable: true
-  oinAudio: https://cdn.cbd.int/akilar-candyassets@1.0.36/audio/coin.mp3
   QR_code:
     - img: https://pan.layne666.cn/images/2021/12/02/cIMvRcUQw6.png
       link:
@@ -287,19 +286,20 @@ comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo
   use:
+    - Twikoo
   # - Valine
   # - Disqus
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
   lazyload: false
-  count: false # Display comment count in post's top_img
+  count: true # Display comment count in post's top_img
   card_post_count: false # Display comment count in Home Page
 
 # disqus
 # https://disqus.com/
 disqus:
-  shortname: 满心欢喜の博客
+  shortname:
 
 # Alternative Disqus - Render comments with Disqus API
 # DisqusJS 評論系統，可以實現在網路審查地區載入 Disqus 評論列表，兼容原版
@@ -381,9 +381,8 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://twikoo-notsprog.vercel.app/
-  region: ap-shanghai
-  visitor: true
+  envId: blog-5g39ur1o81317a16
+  region:
   option:
 
 # Chat Services
@@ -391,10 +390,10 @@ twikoo:
 
 # Chat Button [recommend]
 # It will create a button in the bottom right corner of website, and hide the origin button
-chat_btn: true
+chat_btn: false
 
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
-chat_hide_show: true
+chat_hide_show: false
 
 # chatra
 # https://chatra.io/
@@ -423,15 +422,15 @@ gitter:
 # crisp
 # https://crisp.chat/en/
 crisp:
-  enable: true
-  website_id: 482d6e0b-ea62-40df-8441-51800cdfab1c 
+  enable: false
+  website_id:
 
 # Footer Settings
 # --------------------------------------
 footer:
   owner:
     enable: true
-    since: 2022
+    since: 2018
   custom_text: <p><a style="margin:0 2px"target="_blank" href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为 Hexo" alt="HEXO"></a><a style="margin:0 2px"target="_blank" href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用 Butterfly" alt="Butterfly"></a><a style="margin:0 2px"target="_blank" href="https://www.jsdelivr.com/"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr" title="本站使用 Jsdelivr 为静态资源提供CDN加速" alt="Jsdelivr"></a><a style="margin:0 2px"target="_blank" href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由 GitHub 托管" alt="GitHub"></a><a style="margin:0 2px"target="_blank"href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" alt="img" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p>
   copyright: false # Copyright of theme and framework
   ICP: # Chinese ICP License
@@ -544,7 +543,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://pic.imgdb.cn/item/6305bdfd16f2c2beb163dbb1.png)
+background:
 
 # Footer Background
 footer_bg: false
@@ -598,9 +597,8 @@ fireworks:
   mobile: false
 
 # Mouse click effects: Heart symbol (鼠標點擊效果: 愛心)
-fireworks:
-  enable: true
-  zIndex: 9999 # -1 or 9999
+click_heart:
+  enable: false
   mobile: false
 
 # Mouse click effects: words (鼠標點擊效果: 文字)
@@ -631,18 +629,18 @@ font:
   global-font-size:
   code-font-size:
   font-family:
-  code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+  code-font-family:
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
-  font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
-  font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
+  font_link:
+  font-family:
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
   enable: true
-  icon: \f0f3 # the unicode value of Font Awesome icon, such as '\3423'# the unicode value of Font Awesome icon, such as '\3423'
+  icon: # the unicode value of Font Awesome icon, such as '\3423'
   icon-top:
 
 # the subtitle on homepage (主頁subtitle)
@@ -667,9 +665,7 @@ subtitle:
   sub:
 
 # Loading Animation (加載動畫)
-preloader:
-  enable: true
-  layout: gear # gear, spinner-box 两种样式可选
+preloader: false
 
 # aside (側邊欄)
 # --------------------------------------
@@ -900,21 +896,9 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
     - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
-    - <link rel="stylesheet" href="/css/custom/mouse_cursor.css">
-    ## 星空背景
-    - <link rel="stylesheet" href="/css/universe.css">
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zyoushuo/Blog@latest/hexo/css/loading_style_1.css" > # spinner-box风格样式文件
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zyoushuo/Blog@latest/hexo/css/loading_style_2.css" > # gear风格样式文件
-    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
   bottom:
     - <div class="aplayer no-destroy" data-id="2652030925" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="false" muted></div>
     # - <script src="xxxx"></script>
-		# 星空背景
-    - <canvas id="universe"></canvas>
-    - <script defer src="/js/universe.js"></script>
-        # 樱花飘落效果
-    - <script async src="https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js"></script>
-    - <script src="/js/sun_moon.js" async></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -925,10 +909,6 @@ CDN:
   jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
   main: /js/main.js
   utils: /js/utils.js
-  option:
-      # 打赏按钮投币效果
-      coin_js: /js/coin.js
-      coin_css: /css/coin.css
 
   # pjax
   pjax: https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js
