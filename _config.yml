@@ -1,5 +1,7 @@
 # Hexo Configuration  
 # electric_clock
+butterfly_article_double_row:
+  enable: true
 # see https://anzhiy.cn/posts/fc18.html
 electric_clock:
   enable: true # 开关
