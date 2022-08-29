@@ -3,6 +3,9 @@
 butterfly_article_double_row:
   enable: true
 # see https://anzhiy.cn/posts/fc18.html
+#电子钟
+# electric_clock
+# see https://anzhiy.cn/posts/fc18.html
 electric_clock:
   enable: true # 开关
   priority: 5 #过滤器优先权
@@ -14,9 +17,9 @@ electric_clock:
     type: class
     name: sticky_layout
     index: 0
-  loading: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.0.5/lib/loading.gif #加载动画自定义
-  clock_css: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.0.5/lib/clock.min.css
-  clock_js: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.0.5/lib/clock.min.js
+  loading: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.0.6/lib/loading.gif #加载动画自定义
+  clock_css: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.0.6/lib/clock.min.css
+  clock_js: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu@1.0.6/lib/clock.min.js
   ip_api: https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0
   qweather_key: 45792c25faeb4251b1b09d74206ed9d8 # 和风天气key
   gaud_map_key: 9065fe2e4fde239fae84ce2c35032f21 # 高得地图web服务key
